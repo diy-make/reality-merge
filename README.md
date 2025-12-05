@@ -14,3 +14,8 @@ Our stack includes our Make.DIY dotfiles configuration of a https://github.com/g
 
 ![Gemini CLI Stack](png/gemini-cli-stack.png)
 
+### Workflow Example
+
+![Gemini CLI Workflow Example](png/gemini-cli-workflow-example.png)
+
+
