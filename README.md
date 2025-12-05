@@ -1,5 +1,24 @@
 # reality-merge
 
+## Project Goal: The Peace Arch Portal System (PAPS)
+
+This repository is a "SensAI hack" of the idea space outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
+
+Our goal is to develop the **Peace Arch Portal System (PAPS)**, a network to connect physical makerspaces, starting with the founding nodes at:
+- [Founder Haus](https://founderhaus.club/)
+- [DUNA Residences](https://www.dunaresidences.com/about) (Roatán)
+- [Frontier Tower](https://frontiertower.io/) (San Francisco)
+
+### DUNA Makerspace & The YesTheory Feature
+
+The DUNA makerspace has gained significant attention, highlighted in a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) that has amassed nearly 3 million views. The most popular segment of the video features a tour of the makerspace, showcasing its potential as a hub for innovation and creation.
+
+![YesTheory DUNA Makerspace Tour 1](png/yes-theory-duna-makerspace-tour-1.png)
+*A glimpse into the DUNA makerspace from the YesTheory video.*
+
+![YesTheory DUNA Makerspace Tour 2](png/yes-theory-duna-makerspace-tour-2.png)
+*Another view of the popular makerspace tour.*
+
 This is the Notion: https://sensaihack.notion.site/SensAI-Hack-in-San-Francisco-27dd7964cb7c80eebd4af085a55b7832
 
 The Devpost link is here: https://devpost.com/software/reality-merge
