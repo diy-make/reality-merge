@@ -4,10 +4,18 @@
 
 This repository is a "SensAI hack" of the idea space outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
 
-Our goal is to develop the **Peace Arch Portal System (PAPS)**, a network to connect physical makerspaces, starting with the founding nodes at:
+Our goal is to develop the **Peace Arch Portal System (PAPS)**, a network to connect physical makerspaces.
+
+### Proof-of-Concept: Frontier Tower
+
+The initial proof-of-concept will be implemented at [Frontier Tower](https://frontiertower.io/) in San Francisco, connecting the 7th-floor makerspace with the 12th floor.
+
+### Stretch Goals
+
+Once the PoC is successful, our stretch goals are to connect with other makerspaces, including:
+- [DUNA Residences](https://www.dunaresidences.com/about) (Honduras)
+- A makerspace in Brazil.
 - [Founder Haus](https://founderhaus.club/)
-- [DUNA Residences](https://www.dunaresidences.com/about) (Roatán)
-- [Frontier Tower](https://frontiertower.io/) (San Francisco)
 
 ### DUNA Makerspace & The YesTheory Feature
 
