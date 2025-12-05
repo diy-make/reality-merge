@@ -18,4 +18,24 @@ Our stack includes our Make.DIY dotfiles configuration of a https://github.com/g
 
 ![Gemini CLI Workflow Example](png/gemini-cli-workflow-example.png)
 
+## Hackathon Information
+
+This project was created for the SensAI Hack in San Francisco, which took place from December 5-7, 2025.
+
+### Submission Guidelines
+
+- **Platform:** Devpost
+- **Project Naming:** Must be prefixed with a room number and location code (e.g., "207-SF11 HackFace").
+- **Deliverables:** APK and demo video.
+
+### Judging Criteria
+
+Projects are judged on a 20-point scale across four categories:
+
+1.  **VR Idea & Gameplay (5 pts):** Must be innovative, fun, and engaging.
+2.  **Standalone App Potential (5 pts):** Should have the potential to attract, engage, and retain users on the Meta Quest platform. Existing projects can be submitted if they have significant upgrades.
+3.  **Execution & Polish (5 pts):** The app should be well-executed with a polished user experience and perform reliably on Meta Quest.
+4.  **Category Specific Capabilities (5 pts):** Based on criteria detailed in a separate presentation.
+
+
 
