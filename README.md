@@ -4,9 +4,11 @@ This is the Notion: https://sensaihack.notion.site/SensAI-Hack-in-San-Francisco-
 
 The Devpost link is here: https://devpost.com/software/reality-merge
 
-The Discord group outside of the SensAI Hackathon SF Channel is here: https://discord.gg/pJJtrpJ3Q
+## Discord Links
 
-The Discord group within the channel is here: https://discord.com/channels/1239895395715256330/1446608810809626816
+- **Group Outside Channel:** https://discord.gg/pJJtrpJ3Q
+- **Channel:** https://discord.gg/p4RXZ3S8
+- **Group Inside Channel:** https://discord.com/channels/1239895395715256330/1446608810809626816
 
 ## Our Stack
 
