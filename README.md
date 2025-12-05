@@ -1,10 +1,10 @@
 # reality-merge
 
-## Project Goal: The Peace Arch Portal System (PAPS)
+## Project: Reality Merge
 
-This repository is a "SensAI hack" of the idea space outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
+**Reality Merge** is a "SensAI hack" inspired by the **Peace Arch Portal System (PAPS)** idea space, which is outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
 
-Our goal is to develop the **Peace Arch Portal System (PAPS)**, a network to connect physical makerspaces.
+Our goal is to develop a system to connect physical makerspaces, starting with a proof-of-concept and then expanding to a wider network.
 
 ### Proof-of-Concept: Frontier Tower
 
@@ -19,7 +19,7 @@ Once the PoC is successful, our stretch goals are to connect with other makerspa
 
 ### DUNA Makerspace & The YesTheory Feature
 
-The DUNA makerspace has gained significant attention, highlighted in a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) that has amassed nearly 3 million views. The most popular segment of the video features a tour of the makerspace, showcasing its potential as a hub for innovation and creation.
+The DUNA makerspace, a key inspiration for this project, has gained significant attention from a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) with nearly 3 million views. The video's tour of the makerspace highlights its potential as a hub for innovation.
 
 ![YesTheory DUNA Makerspace Tour 1](png/yes-theory-duna-makerspace-tour-1.png)
 *A glimpse into the DUNA makerspace from the YesTheory video.*
