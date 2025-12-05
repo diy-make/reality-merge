@@ -66,6 +66,22 @@ Projects are judged on a 20-point scale across four categories:
 3.  **Execution & Polish (5 pts):** The app should be well-executed with a polished user experience and perform reliably on Meta Quest.
 4.  **Category Specific Capabilities (5 pts):** Based on criteria detailed in a separate presentation.
 
+## Development Setup
+
+Before running the application, you need to set up the Python virtual environment and install the required dependencies.
+
+1.  **Run the setup script:**
+    ```bash
+    sh sh/setup_env.sh
+    ```
+    This will create a `.venv` directory and install the packages listed in `requirements.txt`.
+
+2.  **Activate the virtual environment:**
+    To activate the environment for your current shell session, run:
+    ```bash
+    source .venv/bin/activate
+    ```
+
 ## Google Drive Integration
 
 This project can be configured to interact with a Google Drive folder to manage assets.
