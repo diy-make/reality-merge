@@ -72,17 +72,24 @@ This project can be configured to interact with a Google Drive folder to manage 
 
 ### Setup
 
-To use this feature, you will need to enable the Google Drive API and get OAuth 2.0 credentials for your Google account.
+To use this feature, you will need to enable the Google Drive API and get your `client_secret.json` file.
 
 1.  **Enable the Google Drive API:**
     *   Go to the [Google Cloud Console](https://console.cloud.google.com/).
     *   Create a new project or select an existing one.
     *   In the API Library, search for "Google Drive API" and enable it.
 
-2.  **Create OAuth 2.0 Credentials:**
+2.  **Download `client_secret.json`:**
     *   In the "Credentials" section of the APIs & Services dashboard, click "Create Credentials" and select "OAuth client ID".
     *   Choose "Desktop app" as the application type.
     *   Download the JSON file and save it as `client_secret.json` in the root of this project.
+
+3.  **Run the Authentication Script:**
+    *   Execute the following command in your terminal:
+        ```bash
+        sh sh/authenticate_gdrive.sh
+        ```
+    *   This will open a browser window for you to authorize access to your Google Drive. After you approve, a `token.json` file will be created.
 
 ### Usage
 
