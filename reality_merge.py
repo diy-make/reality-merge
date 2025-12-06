@@ -4,7 +4,8 @@ import io
 from datetime import datetime, timezone
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.errors import HttpError
-from src.google_auth import get_google_drive_service
+from googleapiclient.discovery import build
+from src.google_auth import get_google_drive_service, get_credentials
 
 # --- CONFIGURATION ---
 ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
@@ -205,14 +206,15 @@ def handle_download(args):
 
 def download_google_doc_as_md(args):
     """Downloads a Google Doc and converts it to a Markdown file."""
-    service = get_google_drive_service()
-    if not service:
+    creds = get_credentials()
+    if not creds:
         return
 
     document_id = args.file_id
     try:
+        docs_service = build("docs", "v1", credentials=creds)
         print(f"Fetching Google Doc: {document_id}")
-        document = service.documents().get(documentId=document_id).execute()
+        document = docs_service.documents().get(documentId=document_id).execute()
         
         doc_title = document.get('title', 'Untitled')
         file_name = f"{doc_title.replace(' ', '_')}.md"
