@@ -6,18 +6,10 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PROJECT_ROOT="$SCRIPT_DIR/.."
 
-# Activate virtual environment if it exists
-VENV_DIR="$PROJECT_ROOT/.venv"
-if [ -d "$VENV_DIR" ]; then
-    echo "Activating virtual environment..."
-    source "$VENV_DIR/bin/activate"
-fi
+echo "Changing to project root: $PROJECT_ROOT"
+cd "$PROJECT_ROOT" || exit
+
+echo "Running authentication..."
 
 # Run the Python authentication script
-python3 "$PROJECT_ROOT/src/google_auth.py"
-
-# Deactivate virtual environment if it was activated
-if [ -n "$VIRTUAL_ENV" ]; then
-    echo "Deactivating virtual environment."
-    deactivate
-fi
+.venv/bin/python src/google_auth.py

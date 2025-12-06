@@ -6,7 +6,10 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PROJECT_ROOT="$SCRIPT_DIR/.."
 
-echo "Running environment setup from $PROJECT_ROOT..."
+echo "Changing to project root: $PROJECT_ROOT"
+cd "$PROJECT_ROOT" || exit
+
+echo "Running environment setup..."
 
 # Run the Python setup script
-python3 "$PROJECT_ROOT/setup.py"
+python3 setup.py
