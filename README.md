@@ -52,7 +52,8 @@ The Devpost link is here: https://devpost.com/software/reality-merge
 
 ## Our Stack
 
-Our stack includes our Make.DIY dotfiles configuration of a https://github.com/google-gemini/gemini-cli environment.
+- Our stack includes our Make.DIY dotfiles configuration of a https://github.com/google-gemini/gemini-cli environment.
+- We use `pre-commit` and `detect-secrets` for secret scanning to prevent committing sensitive information to the repository.
 
 ![Gemini CLI Stack](png/gemini-cli-stack.png)
 
