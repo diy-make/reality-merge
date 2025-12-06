@@ -9,7 +9,7 @@ from src.google_auth import get_google_drive_service, get_credentials
 
 # --- CONFIGURATION ---
 ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
-SYNC_FOLDER_NAME = "GitHub_with_secrets_push_only"
+SYNC_FOLDER_NAME = "main_gemini_only_folder"
 # Exclude directories and files from the upload
 EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
 EXCLUDE_FILES = ['token.json', '.secrets.baseline']
