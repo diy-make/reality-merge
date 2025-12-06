@@ -203,6 +203,82 @@ def handle_download(args):
     except HttpError as err:
         print(f"An error occurred while downloading the file: {err}")
 
+def download_google_doc_as_md(args):
+    """Downloads a Google Doc and converts it to a Markdown file."""
+    service = get_google_drive_service()
+    if not service:
+        return
+
+    document_id = args.file_id
+    try:
+        print(f"Fetching Google Doc: {document_id}")
+        document = service.documents().get(documentId=document_id).execute()
+        
+        doc_title = document.get('title', 'Untitled')
+        file_name = f"{doc_title.replace(' ', '_')}.md"
+        print(f"Converting '{doc_title}' to Markdown ('{file_name}')...")
+
+        content = document.get('body').get('content')
+        
+        md_content = f"# {doc_title}\n\n"
+        
+        for element in content:
+            if "paragraph" in element:
+                paragraph = element.get("paragraph")
+                p_elements = paragraph.get("elements")
+                
+                p_style = paragraph.get("paragraphStyle", {})
+                named_style = p_style.get("namedStyleType")
+
+                is_bullet = paragraph.get('bullet') is not None
+                
+                line_md = ""
+                for elm in p_elements:
+                    if "textRun" in elm:
+                        text_run = elm.get("textRun")
+                        text_content = text_run.get("content").strip('\n')
+                        if not text_content:
+                            continue
+                        
+                        style = text_run.get("textStyle", {})
+                        if style.get('link'):
+                            url = style.get('link').get('url')
+                            if url:
+                                text_content = f"[{text_content}]({url})"
+                        if style.get('italic'):
+                            text_content = f"*{text_content}*"
+                        if style.get('bold'):
+                            text_content = f"**{text_content}**"
+                        
+                        line_md += text_content
+
+                if not line_md.strip():
+                    md_content += "\n"
+                    continue
+
+                if is_bullet:
+                    md_content += f"* {line_md}\n"
+                elif named_style == "TITLE":
+                    pass # Already handled
+                elif named_style == "SUBTITLE":
+                    md_content += f"## {line_md}\n\n"
+                elif named_style == "HEADING_1":
+                    md_content += f"# {line_md}\n\n"
+                elif named_style == "HEADING_2":
+                    md_content += f"## {line_md}\n\n"
+                elif named_style == "HEADING_3":
+                    md_content += f"### {line_md}\n\n"
+                else:
+                    md_content += f"{line_md}\n\n"
+        
+        with open(file_name, 'w', encoding='utf-8') as f:
+            f.write(md_content)
+        
+        print(f"Successfully converted and saved to '{file_name}'.")
+
+    except HttpError as err:
+        print(f"An error occurred while converting the Google Doc: {err}")
+
 # --- MAIN CLI ---
 
 def main():
@@ -222,9 +298,15 @@ def main():
     upload_parser.set_defaults(func=handle_upload)
 
     # Download command
-    download_parser = drive_subparsers.add_parser("download", help="Download a file from Google Drive")
+    download_parser = drive_subparsers.add_parser("download", help="Download a binary file from Google Drive")
     download_parser.add_argument("file_id", help="The ID of the file to download")
     download_parser.set_defaults(func=handle_download)
+
+    # Download Doc command
+    download_doc_parser = drive_subparsers.add_parser("download_doc", help="Download a Google Doc as Markdown")
+    download_doc_parser.add_argument("file_id", help="The ID of the Google Doc to download")
+    download_doc_parser.set_defaults(func=download_google_doc_as_md)
+
 
 
     # --- Argument Parsing ---
