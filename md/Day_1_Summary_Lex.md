@@ -40,7 +40,7 @@ The process was a textbook example of the LFS workflow:
 2.  **The Commit:** We made a massive commit containing the entire Unity project.
 3.  **The Failure:** The `git push` command failed, just as we anticipated. We hit the hard limits of the platform, with our push being rejected due to file size constraints. This was not a setback; it was a crucial data point. It was the proof.
 
-![Git LFS Push Rejected](png/github-push-rejected-file-size.png)
+![Git LFS Push Rejected](../png/github-push-rejected-file-size.png)
 *The predictable but critical failure of our `git push` with LFS, validating our core thesis.*
 
 The experiment was a success in its failure. The subsequent challenge, however, was extracting ourselves from this failed path. It required a delicate and technically complex `git reset --hard` to a pre-LFS commit, followed by a `git lfs untrack` on all patterns to fully cleanse the repository of the LFS configuration. This journey through the depths of Git's plumbing, while arduous, demonstrated the team's ability to navigate complex technical challenges and recover to a clean state.
@@ -49,6 +49,6 @@ The experiment was a success in its failure. The subsequent challenge, however, 
 
 Day 1 of the Reality Merge hackathon concluded around **10:30 PM PST**. We didn't just build an app; we built the factory. We faced one of the most significant and frustrating blockers in distributed VR/MR development, stared it down, and engineered an elegant, AI-powered solution.
 
-The failure of Git LFS was not a loss of time; it was the crucible that validated our entire approach. It provided the "why" for our "what". We end Day 1 not with a fragile prototype, but with a battle-hardened, innovative, and scalable infrastructure. The "SensAI Hack" is complete. The foundation is laid.
+The failure of Git LFS was not a loss of time; it was the crucible that validated our entire approach. It provided the "why" for our "what". We end Day 1 not with a fragile prototype, but with a battle-hardened, innovative, and scalable infrastructure. With this, the foundation for our "SensAI Hack" was laid.
 
 Now, on Day 2, we are free to do what this infrastructure was built for: create. We are ready to execute our game plan, focusing on the Unity scene, multiplayer networking, and bringing the vision of a connected reality to life.
