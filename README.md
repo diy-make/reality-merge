@@ -15,6 +15,8 @@ The central concept is the merging of "Shades"—distinct pieces of information,
 
 This AI-driven synthesis is the "SensAI hack" that will power the connection between the makerspaces.
 
+![The Reality Merge Concept](png/reality-merge-project-concept.png)
+
 Our goal is to develop a system to connect physical makerspaces, starting with a proof-of-concept and then expanding to a wider network.
 
 ### Proof-of-Concept: Frontier Tower
@@ -128,6 +130,17 @@ Once the setup is complete, you can use the following commands:
 *   `reality-merge drive download <file_name>`: Download a file from the folder.
 
 *(Note: These commands are not yet implemented.)*
+
+### Setup in Action
+
+1.  **OAuth Consent Screen:** The authentication script will prompt you to authorize the application in your browser.
+    ![OAuth Consent Screen](png/gdrive-oauth-consent-screen.png)
+
+2.  **Authentication Script Execution:** The script will provide a URL and confirm success in the terminal.
+    ![Authentication Script Execution](png/gdrive-auth-script-execution.png)
+
+3.  **CLI Command Test:** A successful test of the `drive list` command confirms the integration is working.
+    ![CLI List Command Test](png/gdrive-cli-list-command-test.png)
 
 
 
