@@ -281,6 +281,34 @@ def download_google_doc_as_md(args):
     except HttpError as err:
         print(f"An error occurred while converting the Google Doc: {err}")
 
+def handle_move(args):
+    """Moves a file to a new parent folder on Google Drive."""
+    service = get_google_drive_service()
+    if not service:
+        return
+
+    file_id = args.file_id
+    folder_id = args.folder_id
+
+    try:
+        # Retrieve the existing parents to remove
+        file = service.files().get(fileId=file_id, fields='parents', supportsAllDrives=True).execute()
+        previous_parents = ",".join(file.get('parents'))
+
+        # Move the file
+        file = service.files().update(
+            fileId=file_id,
+            addParents=folder_id,
+            removeParents=previous_parents,
+            fields='id, parents',
+            supportsAllDrives=True
+        ).execute()
+        
+        print(f"Successfully moved file ID '{file_id}' to folder ID '{folder_id}'.")
+
+    except HttpError as err:
+        print(f"An error occurred while moving the file: {err}")
+
 # --- MAIN CLI ---
 
 def main():
@@ -308,6 +336,13 @@ def main():
     download_doc_parser = drive_subparsers.add_parser("download_doc", help="Download a Google Doc as Markdown")
     download_doc_parser.add_argument("file_id", help="The ID of the Google Doc to download")
     download_doc_parser.set_defaults(func=download_google_doc_as_md)
+
+    # Move command
+    move_parser = drive_subparsers.add_parser("move", help="Move a file to a new folder in Google Drive")
+    move_parser.add_argument("file_id", help="The ID of the file to move")
+    move_parser.add_argument("folder_id", help="The ID of the destination folder")
+    move_parser.set_defaults(func=handle_move)
+
 
 
 
