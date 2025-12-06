@@ -2,6 +2,7 @@ notion/
 client_secret.json
 token.json
 RealityMerge/
+RealityMerge.zip
 
 # Python
 __pycache__/
