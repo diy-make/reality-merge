@@ -161,12 +161,10 @@ To use this feature, you will need to enable the Google Drive API and get your `
 
 ### Usage
 
-Once the setup is complete, you can use the following commands:
+Once the setup is complete, you can use the following commands (after activating the virtual environment with `source .venv/bin/activate`):
 
-*   `reality-merge drive list`: List the files in the configured Google Drive folder.
-*   `reality-merge drive download <file_name>`: Download a file from the folder.
-
-*(Note: These commands are not yet implemented.)*
+*   `python3 reality_merge.py drive list`: List the files in the project's root Google Drive folder.
+*   `python3 reality_merge.py drive upload`: Sync the entire local project directory (including secrets, excluding `.git` and `.venv`) to a `GitHub_with_secrets_push_only` folder on Google Drive. This performs a one-way "push" sync, only adding and updating files on Drive based on modification times.
 
 ### Setup in Action
 
