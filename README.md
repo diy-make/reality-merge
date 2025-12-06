@@ -1,5 +1,15 @@
 # reality-merge
 
+## The Hackathon Project
+
+This repository contains the plan and supportive infrastructure for the **Reality Merge** hackathon project. The primary goal is to implement a multi-user, mixed-reality shared space based on the architecture outlined in the `md/This_is_the_System_Architecture_&_Data_Flow_.md` document.
+
+The detailed, 12-hour execution plan for the 4-person hackathon team can be found in **[md/gameplan.md](./md/gameplan.md)**.
+
+The subsequent sections of this README detail the **supportive stack** and infrastructure—including the AI/Gemini integration, Google Drive sync, and CLI tools—that have been built to support this effort.
+
+---
+
 ## Project: Reality Merge
 
 **Reality Merge** is a "SensAI hack" inspired by the **Peace Arch Portal System (PAPS)** idea space, which is outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
