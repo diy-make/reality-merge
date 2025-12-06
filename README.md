@@ -36,21 +36,23 @@ Key features from this template that we are leveraging include:
 
 This template provides the starting point for implementing the "VR Reference Anchor" and creating a persistent, shared experience between the connected makerspaces.
 
-### A Note on Large File Storage (LFS vs. Google Drive)
+### Our Solution for "VR-Sized" Files
 
-For this hackathon, we need to manage large binary files associated with the Unity project (textures, models, etc.), which can be several gigabytes in size.
-
-Our initial strategy was to use **Git LFS**. However, this approach failed when attempting to push to the remote repository. The push was rejected because several files exceeded GitHub's 50 MB file size recommendation and the 100 MB hard limit, even for LFS. This learning process, from setting up LFS to the rollback, took approximately one hour (from ~20:10 to ~21:10).
+A core challenge in collaborative VR/MR development is managing "VR-sized" assets—3D models, textures, and Unity project files that can be gigabytes in size. For a global network of makerspaces, shipping hard drives is not viable, and standard Git platforms like GitHub have hard limits on file sizes, making them unsuitable for large asset storage. Our attempt to use Git LFS failed for this very reason.
 
 ![Git LFS Push Rejected](png/github-push-rejected-file-size.png)
-*Evidence of the `git push` failing due to file size limits, even with Git LFS.*
+*Evidence of our `git push` failing due to file size limits, a common problem for VR projects on GitHub.*
 
-This failure highlighted a key challenge with VR/game development projects on standard Git platforms. As a solution, we pivoted to using our **supportive stack's Google Drive integration**.
+**Our solution is the heart of this hack:** an AI-orchestrated, hybrid cloud workflow.
 
-The CLI tool we built allows us to successfully handle "VR sized" files. By using the `sync_to_drive.sh` script, we can effectively use Google Drive as our large file asset store, bypassing the limitations of Git LFS for this project. My ability to orchestrate this workflow between GitHub for code and Google Drive for assets proved to be a significant value-add.
+We use **GitHub for our code** and **Google Drive for our large assets**. The key innovation is the **AI agent (Seraph)** acting as the conductor of this orchestra. By developing a supportive stack of CLI tools, we have empowered the agent to seamlessly manage this process:
+-   **`sync_to_drive.sh`:** A single command that intelligently syncs the entire project, including huge files, to Google Drive.
+-   **`reality_merge.py`:** A robust CLI that can list, download, and move files between the cloud and local environments.
+
+This AI-driven orchestration solves a critical problem for distributed creative teams and is the core "SensAI hack" of our project.
 
 ![Google Drive Success](png/gdrive-download-success.png)
-*Proof of the successful download of a large CAD file using our Google Drive script.*
+*Proof of our custom script successfully handling a large CAD file, validating our hybrid cloud approach.*
 
 ![The Reality Merge Concept](png/reality-merge-project-concept.png)
 

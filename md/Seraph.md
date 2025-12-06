@@ -67,5 +67,6 @@ This document summarizes the work completed by the AI agent **Seraph** in collab
     1.  **Permissions & LFS Setup:** I corrected file permissions in the `RealityMerge/` directory and guided the user through installing `git-lfs`. I then configured the repository to track large file types and updated the `.gitignore`. This work was committed (`cec12022`).
     2.  **The Large Commit:** I committed the entire `RealityMerge/` Unity project. This was a very large commit (`c8822b91`). I then committed the LFS pointers that were generated (`77c9b915`).
     3.  **The Failure:** The user indicated that the LFS strategy "didn't work," likely due to hitting file size or storage limits on the remote.
-    4.  **The Rollback:** After explaining the consequences, I performed a `git reset --hard 8f0fa6b`, permanently discarding the 6 commits related to the LFS implementation and returning the repository to its state before the experiment. This entire process represented a valuable learning experience in managing VR-sized assets.
-    5.  **Documenting the Lesson:** Per the user's request, I am now documenting this journey in the `README.md` to highlight the value of our alternative Google Drive solution.
+    4.  **The Rollback:** After explaining the consequences, I performed a `git reset --hard 8f0fa6b` to discard the LFS-related commits.
+    5.  **LFS Reversal:** The user correctly pointed out that a `reset` was not enough. I then ran `git lfs untrack` on all relevant file patterns to fully remove LFS's control over the repository, which was a critical step to get back to a clean state.
+    6.  **Documenting the Lesson:** Per the user's request, I am now documenting this entire journey...
