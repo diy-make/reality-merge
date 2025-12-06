@@ -1,7 +1,8 @@
 import argparse
 import os
+import io
 from datetime import datetime, timezone
-from googleapiclient.http import MediaFileUpload
+from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.errors import HttpError
 from src.google_auth import get_google_drive_service
 
@@ -164,6 +165,38 @@ def handle_upload(args, retry=True):
         else:
             print(f"An error occurred during sync: {err}")
 
+def handle_download(args):
+    """Handles downloading a file from Google Drive."""
+    service = get_google_drive_service()
+    if not service:
+        return
+
+    file_id = args.file_id
+    try:
+        # First, get the filename
+        file_metadata = service.files().get(fileId=file_id, supportsAllDrives=True).execute()
+        file_name = file_metadata['name']
+        print(f"Starting download for '{file_name}'...")
+
+        request = service.files().get_media(fileId=file_id, supportsAllDrives=True)
+        fh = io.BytesIO()
+        downloader = MediaIoBaseDownload(fh, request)
+        
+        done = False
+        while done is False:
+            status, done = downloader.next_chunk()
+            print(f"Download {int(status.progress() * 100)}%.")
+
+        # Save the file
+        with open(file_name, 'wb') as f:
+            f.write(fh.getvalue())
+
+        print(f"\nSuccessfully downloaded '{file_name}'.")
+
+    except HttpError as err:
+        # Simplified error handling for download
+        print(f"An error occurred while downloading the file: {err}")
+
 # --- MAIN CLI ---
 
 def main():
@@ -181,6 +214,11 @@ def main():
     # Upload command
     upload_parser = drive_subparsers.add_parser("upload", help="Sync the current directory to Google Drive (one-way push)")
     upload_parser.set_defaults(func=handle_upload)
+
+    # Download command
+    download_parser = drive_subparsers.add_parser("download", help="Download a file from Google Drive")
+    download_parser.add_argument("file_id", help="The ID of the file to download")
+    download_parser.set_defaults(func=handle_download)
 
 
     # --- Argument Parsing ---

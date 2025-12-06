@@ -159,7 +159,7 @@ To use this feature, you will need to enable the Google Drive API and get your `
         ```
     *   This will open a browser window for you to authorize access to your Google Drive. After you approve, a `token.json` file will be created.
 
-### Usage
+### Automated Sync
 
 After completing the one-time setup above, you can sync the project to Google Drive at any time by running the following command from the project root:
 
@@ -168,6 +168,13 @@ bash sync_to_drive.sh
 ```
 
 This will automatically handle the environment setup, authentication, and one-way "push" sync of the entire project directory.
+
+### CLI Commands
+
+For more granular control, you can use the following low-level commands after activating the virtual environment (`source .venv/bin/activate`):
+
+*   `python3 reality_merge.py drive list`: List the files in the project's root Google Drive folder.
+*   `python3 reality_merge.py drive download <file_id>`: Download a file from Google Drive by its ID.
 
 ### Setup in Action
 
