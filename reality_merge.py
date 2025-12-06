@@ -122,7 +122,7 @@ def sync_directory(service, local_path, parent_drive_id):
         local_item_path = os.path.join(local_path, item_name)
 
         if os.path.isdir(local_item_path):
-            if item_name in EXCLUDE_DIRS or item_name.startswith('.'):
+            if item_name in EXCLUDE_DIRS:
                 continue
             
             if item_name in remote_items:
@@ -168,11 +168,20 @@ def handle_upload(args, retry=True):
         
         print(f"--- Starting Sync ---")
         print(f"Local source: '{local_path}'")
-        print(f"Remote destination: '{dest_folder_name}'")
+        print(f"Remote destination folder: '{dest_folder_name}'")
         
-        sync_root_id = find_or_create_folder(service, dest_folder_name, ROOT_FOLDER_ID)
-        if sync_root_id:
-            sync_directory(service, local_path, sync_root_id)
+        # Find or create the main destination folder (e.g., shared_working_environment)
+        dest_root_id = find_or_create_folder(service, dest_folder_name, ROOT_FOLDER_ID)
+        
+        if dest_root_id:
+            # If we are syncing a specific directory, create it inside the destination
+            if os.path.isdir(local_path) and local_path != '.':
+                dir_name = os.path.basename(os.path.normpath(local_path))
+                final_dest_id = find_or_create_folder(service, dir_name, dest_root_id)
+            else:
+                final_dest_id = dest_root_id
+
+            sync_directory(service, local_path, final_dest_id)
             print("\nSync complete.")
 
     except HttpError as err:
