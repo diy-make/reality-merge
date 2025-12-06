@@ -6,7 +6,7 @@ from googleapiclient.errors import HttpError
 from src.google_auth import get_google_drive_service
 
 # --- CONFIGURATION ---
-ROOT_FOLDER_ID = "1BEjQ4JBDFJzWn862L4KNPB7tPv_THzkT"
+ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
 SYNC_FOLDER_NAME = "GitHub_with_secrets_push_only"
 # Exclude directories and files from the upload
 EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
@@ -26,7 +26,9 @@ def list_drive_files(folder_id, retry=True):
         results = service.files().list(
             q=query,
             pageSize=100,
-            fields="nextPageToken, files(id, name)"
+            fields="nextPageToken, files(id, name)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True
         ).execute()
         
         items = results.get('files', [])
@@ -60,7 +62,12 @@ def list_drive_files(folder_id, retry=True):
 def find_or_create_folder(service, folder_name, parent_id):
     """Finds a folder by name in a parent, or creates it if it doesn't exist."""
     query = f"name='{folder_name}' and '{parent_id}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false"
-    results = service.files().list(q=query, fields="files(id)").execute()
+    results = service.files().list(
+        q=query, 
+        fields="files(id)", 
+        supportsAllDrives=True, 
+        includeItemsFromAllDrives=True
+    ).execute()
     items = results.get('files', [])
     if items:
         folder_id = items[0]['id']
@@ -73,7 +80,7 @@ def find_or_create_folder(service, folder_name, parent_id):
             'mimeType': 'application/vnd.google-apps.folder',
             'parents': [parent_id]
         }
-        folder = service.files().create(body=file_metadata, fields='id').execute()
+        folder = service.files().create(body=file_metadata, fields='id', supportsAllDrives=True).execute()
         return folder.get('id')
 
 def sync_directory(service, local_path, parent_drive_id):
@@ -82,7 +89,11 @@ def sync_directory(service, local_path, parent_drive_id):
 
     # Get remote items
     query = f"'{parent_drive_id}' in parents and trashed=false"
-    results = service.files().list(fields="files(id, name, modifiedTime, mimeType)").execute()
+    results = service.files().list(
+        fields="files(id, name, modifiedTime, mimeType)", 
+        supportsAllDrives=True, 
+        includeItemsFromAllDrives=True
+    ).execute()
     remote_items = {item['name']: {'id': item['id'], 'modifiedTime': item['modifiedTime']} for item in results.get('files', [])}
 
     # Iterate over local items
@@ -98,7 +109,7 @@ def sync_directory(service, local_path, parent_drive_id):
             else:
                 print(f"Creating remote directory: '{local_item_path}'")
                 file_metadata = {'name': item_name, 'mimeType': 'application/vnd.google-apps.folder', 'parents': [parent_drive_id]}
-                new_folder = service.files().create(body=file_metadata, fields='id').execute()
+                new_folder = service.files().create(body=file_metadata, fields='id', supportsAllDrives=True).execute()
                 sync_directory(service, local_item_path, new_folder.get('id'))
         
         elif os.path.isfile(local_item_path):
@@ -115,12 +126,12 @@ def sync_directory(service, local_path, parent_drive_id):
 
                 if local_mtime_utc > remote_mtime:
                     print(f"Updating remote file: '{local_item_path}'")
-                    service.files().update(fileId=remote_items[item_name]['id'], media_body=media).execute()
+                    service.files().update(fileId=remote_items[item_name]['id'], media_body=media, supportsAllDrives=True).execute()
                 else:
                     pass # Skipping unchanged file
             else:
                 print(f"Uploading new file: '{local_item_path}'")
-                service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+                service.files().create(body=file_metadata, media_body=media, fields='id', supportsAllDrives=True).execute()
 
 
 def handle_upload(args, retry=True):
