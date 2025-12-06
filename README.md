@@ -161,10 +161,13 @@ To use this feature, you will need to enable the Google Drive API and get your `
 
 ### Usage
 
-Once the setup is complete, you can use the following commands (after activating the virtual environment with `source .venv/bin/activate`):
+After completing the one-time setup above, you can sync the project to Google Drive at any time by running the following command from the project root:
 
-*   `python3 reality_merge.py drive list`: List the files in the project's root Google Drive folder.
-*   `python3 reality_merge.py drive upload`: Sync the entire local project directory (including secrets, excluding `.git` and `.venv`) to a `GitHub_with_secrets_push_only` folder on Google Drive. This performs a one-way "push" sync, only adding and updating files on Drive based on modification times.
+```bash
+bash sync_to_drive.sh
+```
+
+This will automatically handle the environment setup, authentication, and one-way "push" sync of the entire project directory.
 
 ### Setup in Action
 
