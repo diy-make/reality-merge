@@ -164,6 +164,22 @@ After updating the baseline, you can `git add .secrets.baseline` and re-commit y
 
 Setting up OAuth 2.0 is a powerful one-time step. It allows this command-line tool to securely access your Google Drive files on your behalf. This unlocks the ability to automate tasks like listing files, downloading assets, and potentially uploading new content directly from your terminal, bridging the gap between your cloud storage and your local development workflow.
 
+### Google Drive Workflow
+
+We use a three-folder system on Google Drive to manage our project's assets, from initial processing to final backup. Our custom CLI tools automate this workflow.
+
+1.  **`needs_to_be_main_gemini_processed/` (The Inbox)**
+    -   **Purpose:** This is the "todo" queue. Any team member can drop files here (like raw documents or assets) that need to be processed and brought into the main project.
+    -   **Action:** Run `python3 reality_merge.py drive process <folder_id>` to automatically download all files from this folder and then delete them from the Drive, ensuring each file is processed only once.
+
+2.  **`shared_working_environment/` (The Unity Project)**
+    -   **Purpose:** This folder contains the large, shared `RealityMerge/` Unity project, allowing team members to stay in sync with the main game assets.
+    -   **Action:** Run `python3 reality_merge.py drive upload RealityMerge/ --dest shared_working_environment` to push updates from the local `RealityMerge/` directory to the cloud.
+
+3.  **`main_gemini_only_including_gitignore/` (The Full Backup)**
+    -   **Purpose:** This is a complete, one-way backup of our entire local repository, including all scripts, documentation, and files that are normally ignored by Git (like `client_secret.json`). It serves as a disaster recovery snapshot for the project's infrastructure.
+    -   **Action:** Run `python3 reality_merge.py drive upload . --dest main_gemini_only_including_gitignore` to sync the entire repository to this folder.
+
 This project can be configured to interact with a Google Drive folder to manage assets.
 
 ### Setup
