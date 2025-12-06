@@ -84,6 +84,8 @@ Before running the application, you need to set up the Python virtual environmen
 
 ## Google Drive Integration
 
+Setting up OAuth 2.0 is a powerful one-time step. It allows this command-line tool to securely access your Google Drive files on your behalf. This unlocks the ability to automate tasks like listing files, downloading assets, and potentially uploading new content directly from your terminal, bridging the gap between your cloud storage and your local development workflow.
+
 This project can be configured to interact with a Google Drive folder to manage assets.
 
 ### Setup
