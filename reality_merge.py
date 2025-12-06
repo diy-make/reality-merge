@@ -42,7 +42,7 @@ def list_drive_files(folder_id, retry=True):
         request = service.files().list(
             q=query,
             pageSize=1000,
-            fields="nextPageToken, files(id, name)",
+            fields="nextPageToken, files(id, name, mimeType)",
             supportsAllDrives=True,
             includeItemsFromAllDrives=True
         )
@@ -55,6 +55,7 @@ def list_drive_files(folder_id, retry=True):
             print('Files:')
             for item in items:
                 print(f"- {item['name']} ({item['id']})")
+        return items
         return items
 
     except HttpError as err:
@@ -74,6 +75,7 @@ def list_drive_files(folder_id, retry=True):
                 return list_drive_files(folder_id, retry=False)
         else:
             print(f"An error occurred while listing files: {err}")
+        return []
         return []
 
 def find_or_create_folder(service, folder_name, parent_id):
@@ -282,9 +284,11 @@ def download_google_doc_as_md(args):
         with open(file_name, 'w', encoding='utf-8') as f:
             f.write(md_content)
         print(f"Successfully converted and saved to '{file_name}'.")
+        return True
 
     except HttpError as err:
         print(f"An error occurred while converting the Google Doc: {err}")
+        return False
 
 def handle_move(args):
     # ... (existing function, no changes)
@@ -335,11 +339,24 @@ def handle_process(args):
 
     for file in files_to_process:
         file_id = file['id']
-        # Mimic argparse object for handle_download
+        mime_type = file.get('mimeType', '')
+        
+        # Mimic argparse object for the download functions
         download_args = argparse.Namespace(file_id=file_id)
+        
         print("-" * 20)
-        if handle_download(download_args, service=service):
+        
+        download_successful = False
+        if mime_type == 'application/vnd.google-apps.document':
+            if download_google_doc_as_md(download_args):
+                download_successful = True
+        else:
+            if handle_download(download_args, service=service):
+                download_successful = True
+
+        if download_successful:
             # Only delete if download was successful
+            print(f"Deleting remote file {file_id} after successful download.")
             handle_delete(file_id)
     
     print("\n--- Finished processing folder. ---")
