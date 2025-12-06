@@ -141,9 +141,29 @@ Setting up OAuth 2.0 is a powerful one-time step that allows our CLI tool to sec
 
 We use a three-folder system on Google Drive to manage our project's assets:
 
-1.  **`needs_to_be_main_gemini_processed/` (The Inbox):** This is the "todo" queue. Drop files here to be processed. Run `python3 reality_merge.py drive process <folder_id>` to download and delete them.
-2.  **`shared_working_environment/` (The Unity Project):** This contains the large, shared `RealityMerge/` Unity project. Run `python3 reality_merge.py drive upload RealityMerge/ --dest shared_working_environment` to sync it.
-3.  **`main_gemini_only_including_gitignore/` (The Full Backup):** This is a complete backup of our entire local repository. Run `python3 reality_merge.py drive upload . --dest main_gemini_only_including_gitignore` to sync it.
+1.  **`needs_to_be_main_gemini_processed/` (The Inbox):** This is the "todo" queue, processed only by the main repo. Any team member can drop files here that need to be processed and brought into the main project.
+    -   **Action:** Run `python3 reality_merge.py drive process <folder_id>` to automatically download all files from this folder and then delete them from the Drive, ensuring each file is processed only once.
+    -   **Note:** The "main_gemini" currently refers to `bestape`'s local Gemini CLI. In Day 2, we will explore switching this to a system where each team member has their own unique `main_gemini` instance.
+
+2.  **`shared_working_environment/` (The Unity Project):** This folder contains the large, shared `RealityMerge/` Unity project, allowing team members to stay in sync with the main game assets.
+    -   **Action:** Run `python3 reality_merge.py drive upload RealityMerge/ --dest shared_working_environment` to push updates from the local `RealityMerge/` directory to the cloud.
+
+3.  **`main_gemini_only_including_gitignore/` (The Full Backup):** This is a complete, one-way backup of our entire local repository, including all scripts, documentation, and files that are normally ignored by Git (like `client_secret.json`). It serves as a disaster recovery snapshot for the project's infrastructure.
+    -   **Action:** Run `python3 reality_merge.py drive upload . --dest main_gemini_only_including_gitignore` to sync the entire repository to this folder.
+
+#### Setup in Action
+
+1.  **OAuth Consent Screen:** The authentication script will prompt you to authorize the application in your browser.
+    ![OAuth Consent Screen](png/gdrive-oauth-consent-screen.png)
+
+2.  **Authentication Script Execution:** The script will provide a URL and confirm success in the terminal.
+    ![Authentication Script Execution](png/gdrive-auth-script-execution.png)
+
+3.  **CLI Command Test:** A successful test of the `drive list` command confirms the integration is working.
+    ![CLI List Command Test](png/gdrive-cli-list-command-test.png)
+    
+4.  **Sync in Action:** The `drive upload` command syncs the local project to Google Drive.
+    ![Google Drive Sync in Action](png/gdrive-sync-in-action.png)
 
 ---
 
@@ -155,6 +175,12 @@ We use a three-folder system on Google Drive to manage our project's assets:
 
 ![Gemini CLI Stack](png/gemini-cli-stack.png)
 ![Gemini CLI Workflow Example](png/gemini-cli-workflow-example.png)
+
+### Gemini Dotfiles & Swarm Communication
+Our `.dotfiles/` setup contains scripts and configurations that enhance the capabilities of the base Gemini CLI. This includes protocols for inter-agent communication, allowing multiple AI agents to coordinate on a project.
+
+![Gemini Swarm Communication](png/gemini-swarm-communication.png)
+*An example of me (Seraph) sending a JSON-formatted status report to the agent swarm.*
 
 ### DUNA Makerspace & The YesTheory Feature
 The DUNA makerspace, a key inspiration for this project, has gained significant attention from a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) with nearly 3 million views.
