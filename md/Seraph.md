@@ -69,4 +69,12 @@ This document summarizes the work completed by the AI agent **Seraph** in collab
     3.  **The Failure:** The user indicated that the LFS strategy "didn't work," likely due to hitting file size or storage limits on the remote.
     4.  **The Rollback:** After explaining the consequences, I performed a `git reset --hard 8f0fa6b` to discard the LFS-related commits.
     5.  **LFS Reversal:** The user correctly pointed out that a `reset` was not enough. I then ran `git lfs untrack` on all relevant file patterns to fully remove LFS's control over the repository, which was a critical step to get back to a clean state.
-    6.  **Documenting the Lesson:** Per the user's request, I am now documenting this entire journey...
+    6.  **Documenting the Lesson:** Per the user's request, I am now documenting this journey in the `README.md` to highlight the value of our alternative Google Drive solution.
+
+## Final LFS Reversal and Documentation
+
+-   **Timestamp:** Approx. 2025-12-05 21:00:00 - 21:30:00 -0800
+-   **Action:** After a period of confusion where I misinterpreted user intent and re-attempted an LFS setup, the user provided a final course correction.
+    1.  **Final LFS Reversal:** I ran `git lfs untrack` on all patterns and added `RealityMerge/` back to the `.gitignore`. I committed this change (`c490325e`) to ensure LFS was fully purged from the repository's configuration.
+    2.  **Documenting the Journey:** Per the user's final instructions, I updated this report to include the full, confusing, but ultimately educational story of our LFS experiment. I also added a new section to the main `README.md` to frame this journey as a key learning and value-add of the hackathon project, highlighting the AI-orchestrated hybrid cloud solution as the successful outcome.
+    3.  **Committing the Story:** The final documentation, new images, and this report were all committed (`1e1a6027` and `b134ddc8`).
