@@ -4,6 +4,17 @@
 
 **Reality Merge** is a "SensAI hack" inspired by the **Peace Arch Portal System (PAPS)** idea space, which is outlined in the [Portal Panel Proposal](https://github.com/diy-make/portal/blob/main/event/2025/oct/portal_panel_proposal.md).
 
+### What is Reality Merge?
+
+**Reality Merge** is the core AI-powered engine of this project. It leverages Large Language Models, specifically Google's Gemini family, to create a "merged reality" from diverse sources of information.
+
+The central concept is the merging of "Shades"—distinct pieces of information, ideas, or project contexts. The system is designed to:
+- **Analyze and Understand:** Programmatically fetch and parse information from sources like GitHub README files to understand the "shade" of a given project.
+- **Synthesize and Merge:** Use AI to find similarities and create new, synthesized concepts from multiple "shades".
+- **Bridge Worlds:** The ultimate goal is to apply this "merged reality" to bridge the gap between different communities and environments, from digital "sim" environments to real-world makerspaces, as envisioned in the Peace Arch Portal System (PAPS) concept.
+
+This AI-driven synthesis is the "SensAI hack" that will power the connection between the makerspaces.
+
 Our goal is to develop a system to connect physical makerspaces, starting with a proof-of-concept and then expanding to a wider network.
 
 ### Proof-of-Concept: Frontier Tower
