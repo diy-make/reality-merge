@@ -38,3 +38,16 @@ This document summarizes the work completed by the AI agent **Seraph** in collab
 
 -   **Timestamp:** 2025-12-05 15:30:32 -0800
 -   **Commit `1d1348e`:** After being asked to investigate a method for Google Drive integration, I analyzed a script from another project (`repos/island_ventures/newsletters/`). I adapted its Python-based authentication logic into a new script (`src/google_auth.py`) and a helper shell script (`sh/authenticate_gdrive.sh`). I then updated the `README.md` to instruct users on how to use this new automated authentication script, replacing the manual setup instructions.
+
+## Google Drive Implementation & README Updates
+
+-   **Timestamp:** Approx. 2025-12-05 16:30:00 - 16:45:00 -0800
+-   **Action:**
+    1.  **Debugging `venv`:** After the user added the `client_secret.json` file, the authentication script failed due to a `ModuleNotFoundError`. I diagnosed that the virtual environment was being created in the wrong directory.
+    2.  **Script Fixes:** I modified `sh/setup_env.sh` and `sh/authenticate_gdrive.sh` to `cd` into the correct project directory before execution, ensuring the correct `venv` was used.
+    3.  **Successful Authentication:** Re-ran the scripts, successfully creating the venv and authenticating with Google Drive, which generated the `token.json`.
+    4.  **CLI Test:** Successfully tested the `reality_merge.py drive list` command.
+    5.  **Commit `abf182d`:** Committed the fixes to the environment and authentication scripts.
+    6.  **README Image Updates:** Renamed and added four new images to the `README.md`. Three images were added to the "Google Drive Integration" section to visually document the setup process. A fourth image (`reality-merge-project-concept.png`) was added to the main "Project" section to represent the core concept of the SensAI submission.
+-   **Timestamp:** 2025-12-05 16:45:54 -0800
+    -   **Commit `ef7aeae`:** Based on a large context of provided code snippets, I synthesized a new "What is Reality Merge?" section for the `README.md`. This section details the technical vision of the project, including the concepts of "Shades" and using the Gemini API to analyze and merge information from different sources like GitHub repositories. This commit captured that update.
