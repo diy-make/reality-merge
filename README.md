@@ -95,6 +95,31 @@ Before running the application, you need to set up the Python virtual environmen
     source .venv/bin/activate
     ```
 
+## Security: Secret Scanning
+
+This repository uses `detect-secrets` and `pre-commit` to prevent accidentally committing sensitive information.
+
+### Setup
+
+After setting up the virtual environment with `sh/setup_env.sh`, you should install the git hooks:
+
+```bash
+source .venv/bin/activate
+pre-commit install
+```
+
+This will automatically scan for secrets on every commit.
+
+### Handling Secrets
+
+If you intentionally add a file with a secret (like `client_secret.json`), the commit will be blocked. To allow the secret, you need to update the baseline:
+
+```bash
+.venv/bin/detect-secrets scan > .secrets.baseline
+```
+
+After updating the baseline, you can `git add .secrets.baseline` and re-commit your changes.
+
 ## Google Drive Integration
 
 Setting up OAuth 2.0 is a powerful one-time step. It allows this command-line tool to securely access your Google Drive files on your behalf. This unlocks the ability to automate tasks like listing files, downloading assets, and potentially uploading new content directly from your terminal, bridging the gap between your cloud storage and your local development workflow.
