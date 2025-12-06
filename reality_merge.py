@@ -6,7 +6,7 @@ from googleapiclient.errors import HttpError
 from src.google_auth import get_google_drive_service
 
 # --- CONFIGURATION ---
-ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
+ROOT_FOLDER_ID = "1BEjQ4JBDFJzWn862L4KNPB7tPv_THzkT"
 SYNC_FOLDER_NAME = "GitHub_with_secrets_push_only"
 # Exclude directories and files from the upload
 EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
@@ -165,7 +165,7 @@ def main():
 
     # List command
     list_parser = drive_subparsers.add_parser("list", help="List files in the Drive folder")
-    list_parser.set_defaults(func=lambda args: list_drive_files('root'))
+    list_parser.set_defaults(func=lambda args: list_drive_files(ROOT_FOLDER_ID))
 
     # Upload command
     upload_parser = drive_subparsers.add_parser("upload", help="Sync the current directory to Google Drive (one-way push)")
