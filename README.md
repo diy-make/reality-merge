@@ -15,6 +15,17 @@ The central concept is the merging of "Shades"—distinct pieces of information,
 
 This AI-driven synthesis is the "SensAI hack" that will power the connection between the makerspaces.
 
+### Technical Baseline: Unity MR Multiplayer Template
+
+This project is built upon the **Unity Mixed Reality Multiplayer Template** as its technical baseline. This template provides the core foundation for creating shared, multi-user mixed reality experiences.
+
+Key features from this template that we are leveraging include:
+- **Multiplayer Networking:** Using Netcode for GameObjects and Unity Cloud Services to connect users across different physical locations.
+- **Shared Coordinate System:** Allowing users in different rooms (e.g., the 7th and 12th floors of Frontier Tower) to interact with the same virtual objects in a shared space.
+- **XR Interaction Toolkit & AR Foundation:** Providing the necessary tools to build for mixed, augmented, and virtual reality, which is essential for "merging" the physical and digital worlds.
+
+This template provides the starting point for implementing the "VR Reference Anchor" and creating a persistent, shared experience between the connected makerspaces.
+
 ![The Reality Merge Concept](png/reality-merge-project-concept.png)
 
 Our goal is to develop a system to connect physical makerspaces, starting with a proof-of-concept and then expanding to a wider network.
