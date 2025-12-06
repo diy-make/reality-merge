@@ -166,14 +166,13 @@ def handle_upload(args, retry=True):
             print(f"An error occurred during sync: {err}")
 
 def handle_download(args):
-    """Handles downloading a file from Google Drive."""
+    """Handles downloading a file from Google Drive with a retry mechanism."""
     service = get_google_drive_service()
     if not service:
         return
 
     file_id = args.file_id
     try:
-        # First, get the filename
         file_metadata = service.files().get(fileId=file_id, supportsAllDrives=True).execute()
         file_name = file_metadata['name']
         print(f"Starting download for '{file_name}'...")
@@ -183,18 +182,25 @@ def handle_download(args):
         downloader = MediaIoBaseDownload(fh, request)
         
         done = False
+        retries = 0
         while done is False:
-            status, done = downloader.next_chunk()
-            print(f"Download {int(status.progress() * 100)}%.")
-
-        # Save the file
+            try:
+                status, done = downloader.next_chunk()
+                if status:
+                    print(f"Download {int(status.progress() * 100)}%.")
+            except TimeoutError:
+                retries += 1
+                if retries > 3:
+                    print("\nDownload failed after multiple timeouts.")
+                    return
+                print(f"\nDownload timed out. Retrying... (Attempt {retries})")
+        
         with open(file_name, 'wb') as f:
             f.write(fh.getvalue())
 
         print(f"\nSuccessfully downloaded '{file_name}'.")
 
     except HttpError as err:
-        # Simplified error handling for download
         print(f"An error occurred while downloading the file: {err}")
 
 # --- MAIN CLI ---
