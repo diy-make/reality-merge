@@ -165,7 +165,7 @@ def main():
 
     # List command
     list_parser = drive_subparsers.add_parser("list", help="List files in the Drive folder")
-    list_parser.set_defaults(func=lambda args: list_drive_files(ROOT_FOLDER_ID))
+    list_parser.set_defaults(func=lambda args: list_drive_files('root'))
 
     # Upload command
     upload_parser = drive_subparsers.add_parser("upload", help="Sync the current directory to Google Drive (one-way push)")
