@@ -7,9 +7,24 @@ from googleapiclient.errors import HttpError
 from googleapiclient.discovery import build
 from src.google_auth import get_credentials, get_google_drive_service
 
+import subprocess # Added import
+
 # --- CONFIGURATION ---
 ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
-SYNC_FOLDER_NAME = "main_gemini_only_including_gitignore"
+
+# Dynamically set SYNC_FOLDER_NAME based on git user.name
+def get_git_config_value(key, default=None):
+    try:
+        return subprocess.check_output(['git', 'config', key]).strip().decode('utf-8')
+    except subprocess.CalledProcessError:
+        return default
+
+user_name = get_git_config_value('user.name')
+if not user_name:
+    raise ValueError("Git user.name is not set. Please configure it using 'git config user.name \"Your Name\"'.")
+
+SYNC_FOLDER_NAME = f"{user_name}_gemini_only_including_gitignore"
+
 # Exclude directories and files from the upload
 EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
 EXCLUDE_FILES = ['token.json', '.secrets.baseline']
