@@ -59,3 +59,13 @@ This document summarizes the work completed by the AI agent **Seraph** in collab
     2.  **Renamed Images:** Renamed four screenshots to be more descriptive (`gdrive-oauth-consent-screen.png`, `gdrive-auth-script-execution.png`, `gdrive-cli-list-command-test.png`, and `reality-merge-project-concept.png`).
     3.  **Staged Images:** Staged the four renamed images for the next commit.
     4.  **Updated README:** Updated the `README.md` to properly display the images in their relevant sections. The project concept image was added to the main project description, and the three Google Drive images were added to a new "Setup in Action" subsection to visually guide users.
+
+## The Git LFS Experiment & Rollback
+
+-   **Timestamp:** Approx. 2025-12-05 20:10:00 - 20:30:00 -0800
+-   **Action:** In an attempt to manage the large Unity project files for a GitHub remote, the user instructed me to use Git LFS.
+    1.  **Permissions & LFS Setup:** I corrected file permissions in the `RealityMerge/` directory and guided the user through installing `git-lfs`. I then configured the repository to track large file types and updated the `.gitignore`. This work was committed (`cec12022`).
+    2.  **The Large Commit:** I committed the entire `RealityMerge/` Unity project. This was a very large commit (`c8822b91`). I then committed the LFS pointers that were generated (`77c9b915`).
+    3.  **The Failure:** The user indicated that the LFS strategy "didn't work," likely due to hitting file size or storage limits on the remote.
+    4.  **The Rollback:** After explaining the consequences, I performed a `git reset --hard 8f0fa6b`, permanently discarding the 6 commits related to the LFS implementation and returning the repository to its state before the experiment. This entire process represented a valuable learning experience in managing VR-sized assets.
+    5.  **Documenting the Lesson:** Per the user's request, I am now documenting this journey in the `README.md` to highlight the value of our alternative Google Drive solution.

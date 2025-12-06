@@ -36,6 +36,22 @@ Key features from this template that we are leveraging include:
 
 This template provides the starting point for implementing the "VR Reference Anchor" and creating a persistent, shared experience between the connected makerspaces.
 
+### A Note on Large File Storage (LFS vs. Google Drive)
+
+For this hackathon, we need to manage large binary files associated with the Unity project (textures, models, etc.), which can be several gigabytes in size.
+
+Our initial strategy was to use **Git LFS**. However, this approach failed when attempting to push to the remote repository. The push was rejected because several files exceeded GitHub's 50 MB file size recommendation and the 100 MB hard limit, even for LFS. This learning process, from setting up LFS to the rollback, took approximately one hour (from ~20:10 to ~21:10).
+
+![Git LFS Push Rejected](png/github-push-rejected-file-size.png)
+*Evidence of the `git push` failing due to file size limits, even with Git LFS.*
+
+This failure highlighted a key challenge with VR/game development projects on standard Git platforms. As a solution, we pivoted to using our **supportive stack's Google Drive integration**.
+
+The CLI tool we built allows us to successfully handle "VR sized" files. By using the `sync_to_drive.sh` script, we can effectively use Google Drive as our large file asset store, bypassing the limitations of Git LFS for this project. My ability to orchestrate this workflow between GitHub for code and Google Drive for assets proved to be a significant value-add.
+
+![Google Drive Success](png/gdrive-download-success.png)
+*Proof of the successful download of a large CAD file using our Google Drive script.*
+
 ![The Reality Merge Concept](png/reality-merge-project-concept.png)
 
 Our goal is to develop a system to connect physical makerspaces, starting with a proof-of-concept and then expanding to a wider network.
