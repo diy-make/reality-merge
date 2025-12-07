@@ -1,0 +1,37 @@
+{
+  "name": "Shared Sync Process",
+  "description": "This MCP outlines the interactive, multi-step process for synchronizing the local 'shared/' folder with the Google Drive 'shared' folder.",
+  "process": [
+    {
+      "step": 1,
+      "name": "List Remote Shared Files",
+      "script": "py/list_drive_files.py",
+      "command": "PYTHONPATH=py .venv/bin/python py/list_drive_files.py --folder-name shared",
+      "output_format": "JSON",
+      "agent_action": "Execute the script and capture the JSON output of remote files."
+    },
+    {
+      "step": 2,
+      "name": "Compare Local and Remote Files",
+      "script": "py/compare_local_and_remote.py",
+      "command": "PYTHONPATH=py .venv/bin/python py/compare_local_and_remote.py --remote-files \"<JSON_OUTPUT_FROM_STEP_1>\" --local-dir shared",
+      "input_format": "JSON from Step 1",
+      "output_format": "JSON (new files to download)",
+      "agent_action": "Execute the script with the remote file list and capture the JSON output of new files."
+    },
+    {
+      "step": 3,
+      "name": "User Selection for Download",
+      "agent_action": "Present the user with the list of new files (from Step 2) and prompt for their selection (e.g., numbers, 'all', 'none')."
+    },
+    {
+      "step": 4,
+      "name": "Download Selected Files",
+      "script": "py/download_files.py",
+      "command": "PYTHONPATH=py .venv/bin/python py/download_files.py --files \"<JSON_SELECTED_FILES>\" --output-dir shared",
+      "input_format": "JSON (user selected files)",
+      "agent_action": "Execute the script with the user's selected files."
+    }
+  ],
+  "outcome": "Selected files from the Google Drive 'shared' folder are downloaded to the local 'shared/' directory."
+}

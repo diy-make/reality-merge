@@ -396,78 +396,6 @@ def handle_process(args):
     
     print("\n--- Finished processing folder. ---")
 
-def download_directory(service, folder_id, local_path):
-    """Recursively downloads the contents of a Google Drive folder to a local directory."""
-    print(f"Downloading contents of folder ID: {folder_id} to '{local_path}'")
-
-    if not os.path.exists(local_path):
-        os.makedirs(local_path)
-
-    query = f"'{folder_id}' in parents and trashed=false"
-    list_request = service.files().list(
-        fields="files(id, name, mimeType, size)", # Added 'size'
-        supportsAllDrives=True,
-        includeItemsFromAllDrives=True,
-        q=query
-    )
-    results = _execute_with_retry(list_request)
-    items = results.get('files', [])
-
-    for item in items:
-        item_id = item['id']
-        item_name = item['name']
-        item_mime_type = item.get('mimeType', '')
-        item_size = int(item.get('size', 0)) # Get file size
-        local_item_path = os.path.join(local_path, item_name)
-
-        if item_mime_type == 'application/vnd.google-apps.folder':
-            download_directory(service, item_id, local_item_path)
-        else:
-            # Check file size before downloading
-            if item_size > 1073741824: # 1 GB in bytes
-                response = input(f"File '{item_name}' is larger than 1 GB ({item_size / 1073741824:.2f} GB). Download? (y/n): ")
-                if response.lower() != 'y':
-                    print(f"Skipping download of '{item_name}'.")
-                    continue
-
-            download_args = argparse.Namespace(file_id=item_id)
-            if item_mime_type == 'application/vnd.google-apps.document':
-                download_google_doc_as_md(download_args, output_dir=local_path)
-            else:
-                handle_download(download_args, service=service, output_dir=local_path)
-
-def handle_sync_shared(args, retry=True):
-    """Wrapper function to handle the sync of the shared folder."""
-    try:
-        service = get_google_drive_service()
-        if not service: return
-
-        print(f"--- Starting Shared Folder Sync ---")
-        
-        shared_folder_id = find_or_create_folder(service, "shared", ROOT_FOLDER_ID)
-
-        if shared_folder_id:
-            download_directory(service, shared_folder_id, 'shared')
-            print("\nShared folder sync complete.")
-
-    except HttpError as err:
-        if err.resp.status in [403, 404] and retry:
-            print("\n--- ERROR: Permission or Not Found issue during sync. ---")
-            print("Attempting to fix by re-authenticating...")
-            
-            token_path = 'token.json'
-            if os.path.exists(token_path):
-                os.remove(token_path)
-                print("Removed old authentication token.")
-
-            print("Please follow the browser authentication steps again.")
-            new_service = get_google_drive_service(force_reauth=True)
-            if new_service:
-                handle_sync_shared(args, retry=False)
-        else:
-            print(f"An error occurred during sync: {err}")
-
-
 # --- MAIN CLI ---
 
 def main():
@@ -508,8 +436,7 @@ def main():
     process_parser.add_argument("folder_id", help="The ID of the folder to process")
     process_parser.set_defaults(func=handle_process)
 
-    sync_shared_parser = drive_subparsers.add_parser("sync_shared", help="Sync the local shared folder to Google Drive")
-    sync_shared_parser.set_defaults(func=handle_sync_shared)
+
 
     args = parser.parse_args()
     if hasattr(args, 'func'):

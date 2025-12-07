@@ -33,8 +33,12 @@ As a Gemini agent in this repository, your main job is to act as a "Google Drive
 1.  **Inbox Sync:** Process files from your user's Google Drive `inbox` folder and download them to the local `inbox/` directory.
     -   **Command:** `python3 py/reality_merge.py drive process <inbox_folder_id>`
 
-2.  **Shared Sync:** Download the contents of the shared Google Drive folder to the local `shared/` folder.
-    -   **Command:** `python3 py/reality_merge.py drive sync_shared`
+2.  **Shared Sync (Interactive):** You will orchestrate an interactive sync of the shared Google Drive folder. This involves:
+    -   Listing remote files using `py/list_drive_files.py`.
+    -   Comparing with local files using `py/compare_local_and_remote.py`.
+    -   Prompting the user for file selection.
+    -   Downloading selected files using `py/download_files.py`.
+    -   Refer to the `.memory/shared_sync_mcp.json` for the detailed process.
 
 3.  **Backup Sync:** Perform a full backup of the local repository to your user's personal `backup` folder on Google Drive.
     -   **Command:** `bash sh/sync_to_drive.sh`
