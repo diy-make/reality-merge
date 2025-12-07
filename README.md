@@ -96,6 +96,24 @@ This AI-driven orchestration solves a critical problem for distributed creative 
 
 ---
 
+## The AI Unix Philosophy: An Interactive Workflow
+
+Building on our hybrid cloud infrastructure, we are evolving our workflow to follow what we call the "AI Unix Philosophy". This approach emphasizes a more interactive and collaborative experience between the user and the AI agent.
+
+Instead of monolithic scripts that run from start to finish, we are breaking down complex processes into a series of small, modular Python scripts. Each script performs a single, well-defined task, such as listing local files, comparing them with a remote repository, or uploading new files.
+
+The AI agent then acts as the interactive shell, orchestrating these scripts and providing a "boomerang feedback" experience. At each step, the agent will:
+1.  Explain what it is about to do.
+2.  Run the relevant script.
+3.  Present the results to the user in a clear and understandable way.
+4.  Ask for confirmation or input before proceeding to the next step.
+5.  **Stop all processes and wait for the user's explicit instruction.**
+
+This philosophy is being implemented for our core Google Drive synchronization systems: `backup`, `inbox`, and `shared`. The detailed workflow for these systems is outlined in the `.memory/sync_workflow.json` file within this repository, following our "Fractal Memory" principle.
+
+This interactive approach provides greater transparency and control over the development process, allowing for a more dynamic and collaborative partnership between the human and AI team members.
+---
+
 ## Development Workflow
 
 ### Multi-User Branching Strategy

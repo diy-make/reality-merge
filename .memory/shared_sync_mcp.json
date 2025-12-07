@@ -1,6 +1,12 @@
 {
   "name": "Shared Sync Process",
   "description": "This MCP outlines the interactive, multi-step process for synchronizing the local 'shared/' folder with the Google Drive 'shared' folder.",
+  "interaction_rules": [
+    {
+      "rule": "Do not use `run_shell_command(\"echo ...\")` to ask questions. Output questions directly as text and wait for explicit user instruction.",
+      "reason": "This is to avoid misinterpreting the tool's output as an instruction to continue, which is a critical operational security risk."
+    }
+  ],
   "process": [
     {
       "step": 1,
@@ -14,7 +20,7 @@
       "step": 2,
       "name": "Compare Local and Remote Files",
       "script": "py/compare_local_and_remote.py",
-      "command": "PYTHONPATH=py .venv/bin/python py/compare_local_and_remote.py --remote-files \"<JSON_OUTPUT_FROM_STEP_1>\" --local-dir shared",
+      "command": "PYTHONPATH=py .venv/bin/python py/compare_local_and_.py --remote-files \"<JSON_OUTPUT_FROM_STEP_1>\" --local-dir shared",
       "input_format": "JSON from Step 1",
       "output_format": "JSON (new files to download)",
       "agent_action": "Execute the script with the remote file list and capture the JSON output of new files."
