@@ -121,3 +121,14 @@ This session captures the final, intensive cleanup of the separate `gemini/` boi
 **18. Agent Verifying the Final History Rewrite**
 ![Agent verifying the successful completion of the git-filter-repo command](../png/18-agent-verifies-final-history-rewrite.png)
 *After multiple failed attempts, the agent executes a final, comprehensive `git filter-repo` command and begins the verification process to ensure all historical cruft and sensitive data has been purged.*
+---
+
+**19. Gemini CLI End-of-Session Summary**
+![This screenshot shows the performance and model usage statistics that are displayed at the end of a Gemini CLI session, providing insight into the agent's operational metrics. It also shows the multi-agent environment with tabs for 'Lex' and 'Vesper'.](../png/19-gemini-cli-end-of-session-summary.png)
+*This screenshot shows the performance and model usage statistics that are displayed at the end of a Gemini CLI session, providing insight into the agent's operational metrics. It also shows the multi-agent environment with tabs for 'Lex' and 'Vesper'.*
+
+---
+
+**20. Gemini CLI End-of-Session Summary 2**
+![A second example of the Gemini CLI's end-of-session summary screen, showing the performance and model usage statistics for a different session.](../png/20-gemini-cli-end-of-session-summary-2.png)
+*A second example of the Gemini CLI's end-of-session summary screen, showing the performance and model usage statistics for a different session.*
