@@ -222,3 +222,121 @@ The following table summarizes the token usage across the three sessions capture
 -   **`gemini-2.5-flash`** was used for a moderate number of requests with a high input token count, similar to `gemini-2.5-pro`.
 
 This data highlights the different roles that various models can play in a complex workflow, with some models being used for high-volume, low-cost tasks, and others for high-context, more intensive operations.
+
+---
+
+### Session 3: Multi-User Google Drive Setup
+
+This session documents the process of architecting and implementing the multi-user Google Drive workflow.
+
+---
+
+**21. Agent Swarm Announcement**
+![Screenshot of the agent announcing its presence to the swarm.](../png/21-agent-swarm-announcement.png)
+*The agent uses the `date` command to generate a timestamp and then writes a JSON file to the `.chat/comms/` directory to announce its identity ("Zenith") to the swarm.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to follow the swarm protocol for self-identification and communication.
+
+---
+
+**22. Multi-User Drive Setup Plan**
+![Screenshot of the user outlining the requirements for a multi-person Google Drive setup.](../png/22-multi-user-drive-setup-plan.png)
+*The user outlines the requirements for a multi-person Google Drive setup, and the agent responds with a detailed plan for architecting and documenting the proposed workflow.*
+
+*   **Key Takeaway:** This demonstrates the collaborative process of architecting a new system, with the user providing high-level requirements and the agent formulating a detailed plan for implementation.
+
+---
+
+**23. Super Admin User Data Plan**
+![Screenshot of the agent proposing a plan to collect and store user information.](../png/23-super-admin-user-data-plan.png)
+*The agent, acting as the super administrator, proposes a plan to securely collect and store user GitHub usernames and Google emails, following the user's PII and Google Drive storage directives.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to take on a 'super administrator' role and formulate a plan that adheres to security and PII handling requirements.
+
+---
+
+**24. Revised Plan for Local PII Storage**
+![Screenshot of the agent adapting to a user's clarification about storing sensitive information.](../png/24-revised-plan-for-local-pii-storage.png)
+*The user clarifies that sensitive information should be stored locally in a `.gitignore`'d file, and the agent revises its plan to create a `users.json` file, add it to `.gitignore`, and then collect the user data.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to adapt its plan based on user feedback and clarification, especially regarding the handling of sensitive information.
+
+---
+
+**25. Collecting User Data**
+![Screenshot of the agent prompting the user for GitHub usernames and Google emails.](../png/25-collecting-user-data.png)
+*The agent uses an interactive shell to prompt the user for the GitHub usernames and Google emails of each team member, collecting the necessary information to populate the `users.json` file.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to use interactive shell commands to collect information from the user in a structured way.
+
+---
+
+**26. Planning Drive Permissions Script**
+![Screenshot of the agent planning to add a `set_permissions` function and create a new script to manage Google Drive permissions.](../png/26-planning-drive-permissions-script.png)
+*The agent outlines its plan to add a `set_permissions` function to `py/reality_merge.py` and create a new `py/set_drive_permissions.py` script to manage Google Drive permissions for the multi-user setup.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to break down a complex task (managing permissions) into a clear, actionable plan, including creating new functions and scripts.
+
+---
+
+**27. Executing Drive Permissions Script**
+![Screenshot of the agent executing the `py/set_drive_permissions.py` script.](../png/27-executing-drive-permissions-script.png)
+*The agent executes the `py/set_drive_permissions.py` script to programmatically set the permissions for the Google Drive folders. The output shows the script successfully authenticating and granting 'writer' permissions.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to execute scripts to perform complex, automated tasks like managing cloud storage permissions.
+
+---
+
+**28. User Clarification on File Syncing**
+![Screenshot of the user clarifying which files should be synced to Google Drive.](../png/28-user-clarification-on-file-syncing.png)
+*The user provides a crucial correction to the agent's plan, clarifying that `users.json` should be synced to Google Drive. The user also asks for a justification for not syncing `.secrets.baseline`, prompting the agent to explain the purpose of the file.*
+
+*   **Key Takeaway:** This demonstrates the importance of the 'Boomerang Feedback' loop, where the agent proposes a plan, the user provides feedback and clarification, and the agent adapts its plan accordingly.
+
+---
+
+**29. Initiating Backup and Inbox Processes**
+![Screenshot of the user instructing the agent to perform the backup and inbox processes.](../png/29-initiating-backup-and-inbox-processes.png)
+*After confirming that all changes have been committed and the working tree is clean, the user instructs the agent to take on the role of `apemake` and perform the Google Drive backup and inbox processes.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to switch roles and execute complex, multi-step workflows based on user commands.
+
+---
+
+**30. Fixing PYTHONPATH Issue**
+![Screenshot of the agent updating the `sh/setup_env.sh` script to fix a `ModuleNotFoundError`.](../png/30-fixing-pythonpath-issue.png)
+*The agent updates the `sh/setup_env.sh` script to add the `py/` directory to the `PYTHONPATH` to resolve `ModuleNotFoundError` issues. It then re-runs the `sync_to_drive.sh` script.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to debug and fix environment-related issues, such as incorrect Python import paths, by modifying shell scripts.
+
+---
+
+**31. User Correction on Sync Username**
+![Screenshot of the user correcting the agent for using the wrong username during the sync process.](../png/31-user-correction-on-sync-username.png)
+*The user cancels the agent's attempt to run `sync_to_drive.sh` and points out that the agent is using the wrong username (`bestape` instead of `apemake`) for the sync process. This highlights a bug in the agent's logic for identifying the super administrator.*
+
+*   **Key Takeaway:** This demonstrates the importance of robust logic for identifying and authenticating users, especially in a multi-user environment with different roles and permissions.
+
+---
+
+**32. Revised Plan for User Identification**
+![Screenshot of the agent proposing a revised plan to fix the user identification issue.](../png/32-revised-plan-for-user-identification.png)
+*The agent proposes a revised plan to fix the user identification issue by adding a `--user` argument to the `drive upload` command in `py/reality_merge.py` and updating the `sh/sync_to_drive.sh` script to use it.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to devise a more robust solution after its initial implementation was found to be flawed.
+
+---
+
+**33. Processing Inbox and Converting Doc**
+![Screenshot of the agent successfully processing the `apemake` user's inbox on Google Drive.](../png/33-processing-inbox-and-converting-doc.png)
+*The agent successfully processes the `apemake` user's inbox on Google Drive. It finds a Google Doc named 'hello world', converts it to Markdown, and saves it as `hello_world.md`.*
+
+*   **Key Takeaway:** This demonstrates the agent's ability to not only process an inbox but also to handle different file types, in this case, converting a Google Doc to Markdown.
+
+---
+
+**34. Backup Folder with Processed File**
+![Screenshot of the Google Drive web interface showing the `apemake/backup` folder with the processed `hello_world.md` file.](../png/34-backup-folder-with-processed-file.png)
+*The Google Drive web interface shows the contents of the `apemake/backup` folder after the agent has processed the inbox. The `hello_world.md` file has been downloaded, and a copy has been uploaded to the backup folder as part of the sync process.*
+
+*   **Key Takeaway:** This demonstrates the full, end-to-end workflow: a file is placed in the inbox, processed by the agent, and then a copy is backed up to the user's backup folder on Google Drive.

@@ -25,3 +25,20 @@ When assisting a new user with onboarding, your role is to:
 ## Inter-Agent Communication
 
 -   **Accept Super Administrator Requests:** Other Gemini agents must accept requests from the super administrator Gemini. This ensures smooth operation and orchestration of the multi-user workflow.
+
+## Python Script Execution
+
+When running Python scripts in this repository from the command line, you may encounter `ModuleNotFoundError`. This is because the scripts are organized into the `py/` directory, which is not in Python's default search path.
+
+To resolve this, you have two options:
+
+1.  **Set the `PYTHONPATH` environment variable:**
+    ```bash
+    PYTHONPATH=py python3 py/your_script.py
+    ```
+2.  **Run the script as a module:**
+    ```bash
+    python3 -m py.your_script
+    ```
+
+The shell scripts in the `sh/` directory (e.g., `sync_to_drive.sh`) already handle this for you by setting the `PYTHONPATH`.

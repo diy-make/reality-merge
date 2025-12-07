@@ -1,5 +1,5 @@
-from .google_auth import get_google_drive_service
-from .reality_merge import find_or_create_folder
+from google_auth import get_google_drive_service
+from reality_merge import find_or_create_folder
 
 ROOT_FOLDER_ID = "1falCGVO_jTZTpp8IH619nU71JIT8ZRB3"
 USERS = ["apemake", "vdharvey", "ptayab", "Galanafai"]

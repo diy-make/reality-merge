@@ -184,7 +184,7 @@ def handle_upload(args, retry=True):
         print(f"Local source: '{local_path}'")
         
         # New logic for multi-user folder structure
-        user_name = get_git_config_value('user.name')
+        user_name = args.user if args.user else get_git_config_value('user.name')
         if not user_name:
             raise ValueError("Git user.name is not set. Please configure it using 'git config user.name \"Your Name\"'.")
 
@@ -401,6 +401,7 @@ def main():
     upload_parser = drive_subparsers.add_parser("upload", help="Sync a local directory to a Google Drive folder")
     upload_parser.add_argument("local_path", default='.', nargs='?', help="Local directory to upload (defaults to current dir)")
     upload_parser.add_argument("--dest", dest="dest_folder", default=None, help=f"Destination folder name (defaults to {SYNC_FOLDER_NAME})")
+    upload_parser.add_argument("--user", dest="user", default=None, help="The user to perform the backup for.")
     upload_parser.set_defaults(func=handle_upload)
 
     download_parser = drive_subparsers.add_parser("download", help="Download a binary file from Google Drive")

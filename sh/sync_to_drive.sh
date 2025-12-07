@@ -16,9 +16,11 @@ bash "$SCRIPT_DIR/authenticate_gdrive.sh"
 
 echo ""
 echo "--- Step 3: Syncing project to Google Drive ---"
+echo "This may take a while depending on the size of the project and your internet connection."
 # Activate venv and run the upload command
 source "$SCRIPT_DIR/../.venv/bin/activate"
-python3 "$SCRIPT_DIR/../py/reality_merge.py" drive upload
+export PYTHONPATH=$PYTHONPATH:$SCRIPT_DIR/../py
+python3 "$SCRIPT_DIR/../py/reality_merge.py" drive upload --user apemake
 
 echo ""
 echo "Sync script finished."
