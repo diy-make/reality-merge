@@ -186,7 +186,7 @@ As a Gemini agent, my main job in this repository is to act as a "Google Drive O
 1.  **Inbox Sync:** I will process files from your Google Drive `inbox` folder and download them to the local `inbox/` directory.
     -   **Command:** `python3 py/reality_merge.py drive process <inbox_folder_id>`
 
-2.  **Shared Sync:** I will sync the contents of your local `shared/` folder to the shared Google Drive folder. This is a one-way sync and will not delete any files from the remote `shared` folder.
+2.  **Shared Sync:** I will download the contents of the shared Google Drive folder to your local `shared/` folder. This is a one-way sync and will not modify any files on the remote `shared` folder.
     -   **Command:** `python3 py/reality_merge.py drive sync_shared`
 
 3.  **Backup Sync:** I will perform a full backup of your local repository (including dotfiles) to your personal `backup` folder on Google Drive.
