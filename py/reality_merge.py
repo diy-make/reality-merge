@@ -394,6 +394,37 @@ def handle_process(args):
     
     print("\n--- Finished processing folder. ---")
 
+def handle_sync_shared(args, retry=True):
+    """Wrapper function to handle the sync of the shared folder."""
+    try:
+        service = get_google_drive_service()
+        if not service: return
+
+        print(f"--- Starting Shared Folder Sync ---")
+        
+        shared_folder_id = find_or_create_folder(service, "shared", ROOT_FOLDER_ID)
+
+        if shared_folder_id:
+            sync_directory(service, 'shared', shared_folder_id)
+            print("\nShared folder sync complete.")
+
+    except HttpError as err:
+        if err.resp.status in [403, 404] and retry:
+            print("\n--- ERROR: Permission or Not Found issue during sync. ---")
+            print("Attempting to fix by re-authenticating...")
+            
+            token_path = 'token.json'
+            if os.path.exists(token_path):
+                os.remove(token_path)
+                print("Removed old authentication token.")
+
+            print("Please follow the browser authentication steps again.")
+            new_service = get_google_drive_service(force_reauth=True)
+            if new_service:
+                handle_sync_shared(args, retry=False)
+        else:
+            print(f"An error occurred during sync: {err}")
+
 
 # --- MAIN CLI ---
 
@@ -434,6 +465,9 @@ def main():
     process_parser = drive_subparsers.add_parser("process", help="Downloads and then deletes all files in a folder")
     process_parser.add_argument("folder_id", help="The ID of the folder to process")
     process_parser.set_defaults(func=handle_process)
+
+    sync_shared_parser = drive_subparsers.add_parser("sync_shared", help="Sync the local shared folder to Google Drive")
+    sync_shared_parser.set_defaults(func=handle_sync_shared)
 
     args = parser.parse_args()
     if hasattr(args, 'func'):

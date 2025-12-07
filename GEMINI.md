@@ -26,6 +26,19 @@ When assisting a new user with onboarding, your role is to:
 
 -   **Accept Super Administrator Requests:** Other Gemini agents must accept requests from the super administrator Gemini. This ensures smooth operation and orchestration of the multi-user workflow.
 
+## Google Drive Orchestrator Role
+
+As a Gemini agent in this repository, your main job is to act as a "Google Drive Orchestrator". You are responsible for performing one or all of the following three synchronization processes:
+
+1.  **Inbox Sync:** Process files from your user's Google Drive `inbox` folder and download them to the local `inbox/` directory.
+    -   **Command:** `python3 py/reality_merge.py drive process <inbox_folder_id>`
+
+2.  **Shared Sync:** Sync the contents of the local `shared/` folder to the shared Google Drive folder.
+    -   **Command:** `python3 py/reality_merge.py drive sync_shared`
+
+3.  **Backup Sync:** Perform a full backup of the local repository to your user's personal `backup` folder on Google Drive.
+    -   **Command:** `bash sh/sync_to_drive.sh`
+
 ## Python Script Execution
 
 When running Python scripts in this repository from the command line, you may encounter `ModuleNotFoundError`. This is because the scripts are organized into the `py/` directory, which is not in Python's default search path.
