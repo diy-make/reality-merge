@@ -385,25 +385,6 @@ def handle_process(args):
     
     print("\n--- Finished processing folder. ---")
 
-def set_permissions(service, file_id, email_address):
-    """
-    Grants 'writer' permissions to a user for a specific file or folder.
-    """
-    try:
-        permission = {
-            'type': 'user',
-            'role': 'writer',
-            'emailAddress': email_address
-        }
-        service.permissions().create(
-            fileId=file_id,
-            body=permission,
-            supportsAllDrives=True
-        ).execute()
-        print(f"Granted 'writer' permissions to {email_address} for file ID {file_id}")
-    except HttpError as err:
-        print(f"An error occurred while setting permissions: {err}")
-
 
 # --- MAIN CLI ---
 
@@ -443,11 +424,6 @@ def main():
     process_parser = drive_subparsers.add_parser("process", help="Downloads and then deletes all files in a folder")
     process_parser.add_argument("folder_id", help="The ID of the folder to process")
     process_parser.set_defaults(func=handle_process)
-
-    set_perms_parser = drive_subparsers.add_parser("set_perms", help="Set permissions for a file or folder")
-    set_perms_parser.add_argument("file_id", help="The ID of the file or folder")
-    set_perms_parser.add_argument("email", help="The email address of the user")
-    set_perms_parser.set_defaults(func=lambda args: set_permissions(get_google_drive_service(), args.file_id, args.email))
 
     args = parser.parse_args()
     if hasattr(args, 'func'):
