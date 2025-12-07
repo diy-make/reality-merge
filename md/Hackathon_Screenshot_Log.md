@@ -61,3 +61,63 @@ This session on the morning of Day 2 involved bringing a new AI agent, "Lex," on
 **9. Gemini CLI End-of-Session Summary**
 ![An example of the Gemini CLI's end-of-session summary screen](../png/09-gemini-cli-session-summary.png)
 *This screenshot shows the performance and model usage statistics that are displayed at the end of a Gemini CLI session, providing insight into the agent's operational metrics.*
+
+---
+
+### Session 2: Final `gemini/` Repository Cleanup
+
+This session captures the final, intensive cleanup of the separate `gemini/` boilerplate repository before it was deemed ready for public release. The screenshots document the process of identifying and resolving PII and secret leaks from the Git history.
+
+---
+
+**10. Agent Proposes Screenshot Renames**
+![Agent proposing the first batch of screenshot renames](../png/10-agent-proposes-screenshot-renames.png)
+*The agent, having analyzed the first batch of screenshots from the "Onboarding of Lex" session, proposes a list of descriptive, numbered filenames for user approval.*
+
+---
+
+**11. Agent Proposes PII History Fix**
+![Agent proposing the git filter-repo command to fix a PII leak](../png/11-agent-proposes-pii-history-fix.png)
+*After identifying a PII leak in the `gemini/` repository's Git history, the agent explains the destructive nature of `git filter-repo` and proposes the command to fix it, waiting for explicit user approval.*
+
+---
+
+**12. Agent Explains `.gemini/` Directory Exceptions**
+![Agent explaining why certain files in the .gemini folder are tracked](../png/12-agent-explains-gemini-exceptions.png)
+*The user questions why a file with "secrets" in the name is tracked. The agent explains the purpose of `.secrets.baseline` (an allow-list for false positives) and `settings.json` (a safe default configuration), justifying their inclusion in the public boilerplate.*
+
+---
+
+**13. Agent "Cygnus" Explaining its Name**
+![An example of a different agent, "Cygnus", explaining its name choice](../png/13-agent-cygnus-explains-name-choice.png)
+*This screenshot, taken from a different session, shows another agent named "Cygnus" explaining the reasoning behind its name, demonstrating a key part of the swarm protocol.*
+
+---
+
+**14. Agent Concludes "Cruft" Analysis**
+![Agent concluding that no files should be removed after a deep review](../png/14-agent-gives-cruft-analysis-conclusion.png)
+*After a detailed review of all files in the `gemini/` repo, the agent concludes that no files are "cruft" and that all serve a purpose, either technically or as a feature defining the boilerplate's character.*
+
+---
+
+**15. Agent Identifies System-Level Dependencies**
+![Agent identifying system-level dependencies like screen and git](../png/15-agent-identifies-system-dependencies.png)
+*The user points out that the dependency audit was incomplete. The agent acknowledges its oversight and identifies critical system-level executables (`bash`, `screen`, `git`, etc.) that are prerequisites for the repository to function.*
+
+---
+
+**16. Agent Debugging a `WriteFile` Permission Error**
+![Agent diagnosing and correcting a file permission error](../png/16-agent-debugs-writefile-permissions.png)
+*During the history cleanup, the agent attempts to write a temporary script to a forbidden directory. It correctly diagnoses the permission error and formulates a plan to write the file to the allowed project workspace instead.*
+
+---
+
+**17. User Clarifying the Hackathon Team Structure**
+![User explaining the team structure for the hackathon](../png/17-user-clarifies-hackathon-team-structure.png)
+*The user provides a list of the hackathon team members, clarifying the different roles and collaborations within the project.*
+
+---
+
+**18. Agent Verifying the Final History Rewrite**
+![Agent verifying the successful completion of the git-filter-repo command](../png/18-agent-verifies-final-history-rewrite.png)
+*After multiple failed attempts, the agent executes a final, comprehensive `git filter-repo` command and begins the verification process to ensure all historical cruft and sensitive data has been purged.*
