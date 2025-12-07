@@ -11,3 +11,7 @@ __pycache__/
 
 # User Management File
 users.json
+
+# Local folders for Drive sync
+inbox/
+shared/

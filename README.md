@@ -179,17 +179,15 @@ Setting up OAuth 2.0 is a powerful one-time step that allows our CLI tool to sec
 
 #### Google Drive Folder Workflow
 
-We use a three-folder system on Google Drive to manage our project's assets:
+We use a local `inbox/` and `shared/` folder to interact with Google Drive.
 
-1.  **`needs_to_be_main_gemini_processed/` (The Inbox):** This is the "todo" queue, processed only by the main repo. Any team member can drop files here that need to be processed and brought into the main project.
-    -   **Action:** Run `python3 py/reality_merge.py drive process <folder_id>` to automatically download all files from this folder and then delete them from the Drive, ensuring each file is processed only once.
-    -   **Note:** The "main_gemini" currently refers to `bestape`'s local Gemini CLI. In Day 2, we will explore switching this to a system where each team member has their own unique `main_gemini` instance.
+1.  **`inbox/` (Local):** This folder is a local representation of your Google Drive `inbox` folder. Files from the Google Drive `inbox` will be downloaded here when you run the `process` command.
+    -   **Action:** Run `python3 py/reality_merge.py drive process <inbox_folder_id>` to download files from your Google Drive inbox to your local `inbox/` folder.
 
-2.  **`shared_working_environment/` (The Unity Project):** This folder contains the large, shared `RealityMerge/` Unity project, allowing team members to stay in sync with the main game assets.
-    -   **Action:** Run `python3 py/reality_merge.py drive upload RealityMerge/ --dest shared_working_environment` to push updates from the local `RealityMerge/` directory to the cloud.
+2.  **`shared/` (Local):** This folder is a local representation of the shared Google Drive folder. You can add files here to be synced to the shared Google Drive folder.
+    -   **Action:** The `sh/sync_to_drive.sh` script will sync the contents of this folder to the `shared` folder on Google Drive.
 
-3.  **`main_gemini_only_including_gitignore/` (The Full Backup):** This is a complete, one-way backup of our entire local repository, including all scripts, documentation, and files that are normally ignored by Git (like `client_secret.json`). It serves as a disaster recovery snapshot for the project's infrastructure.
-    -   **Action:** Run `python3 py/reality_merge.py drive upload . --dest main_gemini_only_including_gitignore` to sync the entire repository to this folder.
+3.  **Backup:** The `sh/sync_to_drive.sh` script also performs a full backup of your local repository to your personal `backup` folder on Google Drive.
 
 #### Setup in Action
 

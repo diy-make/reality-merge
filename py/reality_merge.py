@@ -215,7 +215,7 @@ def handle_upload(args, retry=True):
         else:
             print(f"An error occurred during sync: {err}")
 
-def handle_download(args, service=None):
+def handle_download(args, service=None, output_dir=None):
     """Handles downloading a file from Google Drive."""
     if not service:
         service = get_google_drive_service()
@@ -244,16 +244,21 @@ def handle_download(args, service=None):
                     return False
                 print(f"\nDownload timed out. Retrying... (Attempt {retries})")
         
-        with open(file_name, 'wb') as f:
+        if output_dir:
+            file_path = os.path.join(output_dir, file_name)
+        else:
+            file_path = file_name
+            
+        with open(file_path, 'wb') as f:
             f.write(fh.getvalue())
-        print(f"\nSuccessfully downloaded '{file_name}'.")
+        print(f"\nSuccessfully downloaded to '{file_path}'.")
         return True
 
     except HttpError as err:
         print(f"An error occurred while downloading the file: {err}")
         return False
 
-def download_google_doc_as_md(args):
+def download_google_doc_as_md(args, output_dir=None):
     # ... (existing function, no changes)
     creds = get_credentials()
     if not creds: return
@@ -303,10 +308,15 @@ def download_google_doc_as_md(args):
                 elif named_style == "HEADING_2": md_content += f"## {line_md}\n\n"
                 elif named_style == "HEADING_3": md_content += f"### {line_md}\n\n"
                 else: md_content += f"{line_md}\n\n"
-        
-        with open(file_name, 'w', encoding='utf-8') as f:
+
+        if output_dir:
+            file_path = os.path.join(output_dir, file_name)
+        else:
+            file_path = file_name
+
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(md_content)
-        print(f"Successfully converted and saved to '{file_name}'.")
+        print(f"Successfully converted and saved to '{file_path}'.")
         return True
 
     except HttpError as err:
@@ -371,10 +381,10 @@ def handle_process(args):
         
         download_successful = False
         if mime_type == 'application/vnd.google-apps.document':
-            if download_google_doc_as_md(download_args):
+            if download_google_doc_as_md(download_args, output_dir='inbox'):
                 download_successful = True
         else:
-            if handle_download(download_args, service=service):
+            if handle_download(download_args, service=service, output_dir='inbox'):
                 download_successful = True
 
         if download_successful:
