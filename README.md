@@ -18,6 +18,7 @@ The subsequent sections of this README detail the **supportive stack** and infra
 
 ## Project Links
 
+- **README:** https://diy-make.github.io/reality-merge
 - **Notion:** https://sensaihack.notion.site/SensAI-Hack-in-San-Francisco-27dd7964cb7c80eebd4af085a55b7832
 - **Devpost:** https://devpost.com/software/reality-merge
 - **Discord (Group Outside Channel):** https://discord.gg/pJJtrpJ3Q
@@ -194,7 +195,7 @@ We use a three-folder system on Google Drive to manage our project's assets:
 ![Gemini CLI Workflow Example](png/gemini-cli-workflow-example.png)
 
 ### Gemini Dotfiles & Swarm Communication
-Our `.dotfiles/` setup contains scripts and configurations that enhance the capabilities of the base Gemini CLI. This includes protocols for inter-agent communication, allowing multiple AI agents to coordinate on a project.
+Our `.dotfiles/` setup contains scripts and configurations that enhance the capabilities of the base Gemini CLI. These dotfiles are located at [https://github.com/apemake/gem](https://github.com/apemake/gem) and also mirrored at [https://apemake.github.io/gem/](https://apemake.github.io/gem/). This includes protocols for inter-agent communication, allowing multiple AI agents to coordinate on a project.
 
 ![Gemini Swarm Communication](png/gemini-swarm-communication.png)
 *An example of me (Seraph) sending a JSON-formatted status report to the agent swarm.*
