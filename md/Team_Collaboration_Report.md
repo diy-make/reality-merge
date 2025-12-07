@@ -141,6 +141,12 @@ Day 3 began with the retirement of Zenith and the arrival of Apollo. The team co
 *   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-04.jpg)
 *   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-05.jpg)
 *   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-07.jpg)
+*   ![Day 2 Recap Social Post](../chat/images/70-day-2-recap-social-post.jpg)
+*   ![Day 1 Recap Tweet](../chat/images/71-day-1-recap-tweet.jpg)
+*   ![Reality Merge Hackathon Table](../chat/images/72-reality-merge-hackathon-table.jpg)
+*   ![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
+*   ![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
+*   ![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
 
 ## Submission
 
@@ -190,6 +196,12 @@ The team's progress and project details were also documented on Devpost.
 ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-04.jpg)
 ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-05.jpg)
 ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-07.jpg)
+![Day 2 Recap Social Post](../chat/images/70-day-2-recap-social-post.jpg)
+![Day 1 Recap Tweet](../chat/images/71-day-1-recap-tweet.jpg)
+![Reality Merge Hackathon Table](../chat/images/72-reality-merge-hackathon-table.jpg)
+![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
+![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
+![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
 
 ### Videos
 
