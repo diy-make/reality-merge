@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.errors import HttpError
 from googleapiclient.discovery import build
-from .google_auth import get_credentials, get_google_drive_service
+from google_auth import get_credentials, get_google_drive_service
 
 import subprocess # Added import
 
@@ -179,24 +179,23 @@ def handle_upload(args, retry=True):
         if not service: return
 
         local_path = args.local_path
-        dest_folder_name = args.dest_folder if args.dest_folder else SYNC_FOLDER_NAME
         
         print(f"--- Starting Sync ---")
         print(f"Local source: '{local_path}'")
-        print(f"Remote destination folder: '{dest_folder_name}'")
         
-        # Find or create the main destination folder (e.g., shared_working_environment)
-        dest_root_id = find_or_create_folder(service, dest_folder_name, ROOT_FOLDER_ID)
-        
-        if dest_root_id:
-            # If we are syncing a specific directory, create it inside the destination
-            if os.path.isdir(local_path) and local_path != '.':
-                dir_name = os.path.basename(os.path.normpath(local_path))
-                final_dest_id = find_or_create_folder(service, dir_name, dest_root_id)
-            else:
-                final_dest_id = dest_root_id
+        # New logic for multi-user folder structure
+        user_name = get_git_config_value('user.name')
+        if not user_name:
+            raise ValueError("Git user.name is not set. Please configure it using 'git config user.name \"Your Name\"'.")
 
-            sync_directory(service, local_path, final_dest_id)
+        print(f"User: {user_name}")
+
+        users_folder_id = find_or_create_folder(service, "users", ROOT_FOLDER_ID)
+        user_folder_id = find_or_create_folder(service, user_name, users_folder_id)
+        backup_folder_id = find_or_create_folder(service, "backup", user_folder_id)
+
+        if backup_folder_id:
+            sync_directory(service, local_path, backup_folder_id)
             print("\nSync complete.")
 
     except HttpError as err:
