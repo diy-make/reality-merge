@@ -37,7 +37,7 @@ The following folder structure will be implemented within a single, shared Googl
 
 To manage permissions and namespaces effectively, the super administrator will maintain a list of all users. This list will map each user's GitHub username to their Google-hosted email address.
 
--   **Super Administrator's Responsibility:** The super administrator is responsible for maintaining this user list in a `.gitignore`'d `users.json` file and using it to grant the appropriate permissions on Google Drive.
+-   **Super Administrator's Responsibility:** The super administrator is responsible for maintaining this user list in `users.json`. This file is synced to Google Drive and serves as the single source of truth for user information.
 -   **Non-Super Admin Agent's Responsibility:** During the onboarding process, a non-super-admin Gemini agent must prompt the user for their Google email address and communicate this information to the super administrator. This will be part of the `sh/initialize_user.sh` script's functionality.
 
 ## 3. Permissions Model

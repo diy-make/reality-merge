@@ -27,7 +27,7 @@ SYNC_FOLDER_NAME = f"{user_name}_gemini_only_including_gitignore"
 
 # Exclude directories and files from the upload
 EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
-EXCLUDE_FILES = ['token.json', '.secrets.baseline']
+EXCLUDE_FILES = ['token.json', 'client_secret.json']
 
 # --- HELPER FUNCTIONS ---
 def _execute_with_retry(request, max_retries=3):
