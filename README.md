@@ -23,9 +23,17 @@ This AI-driven orchestration solves a critical problem for distributed creative 
 
 Our project's very existence, and the tangible need for between-makerspace collaboration, is rooted in the "Cheerbot" initiative ([github.com/cheerbotme](https://github.com/cheerbotme)). This isn't a hypothetical need; it stems directly from the customer discovery documented in our [OSO Hack submission](https://github.com/diy-make/OSO_hack).
 
-The core of this collaboration involved a VR chassis originally sculpted by Colton, a talented VR artist, using a Meta VR headset. This 3D model, born in one makerspace, became the focal point for a cross-continental interaction. The very demo video submitted to SensAI, a mere 45 seconds long, powerfully showcases this interaction: the virtual Cheerbot chassis, brought to life through our system.
+The core of this collaboration involved a VR chassis originally sculpted by Colton Orr, an acclaimed VR sculptor, using a Meta VR headset. This 3D model, born in one makerspace, became the focal point for a cross-continental interaction between the San Francisco and Honduran makerspaces. The very demo video submitted to SensAI, a mere 45 seconds long, powerfully showcases this interaction: the virtual Cheerbot chassis, brought to life through our system.
 
-During the hackathon, we also physically made a Cheerbot robot, demonstrating the real-world impact of our virtual collaboration. This tangible outcome further validates the need for tools like Reality Merge to bridge the gap between digital design and physical fabrication across distributed teams.
+During the hackathon, we also physically made a Cheerbot robot, demonstrating the real-world impact of our virtual collaboration.
+
+![The Cheerbot](png/cheerbot.png)
+
+The Cheerbot project has a rich history, and you can explore its journey on the [Cheerbot YouTube playlist](https://www.youtube.com/@cheerbot3333/playlists).
+
+Colton Orr's other incredible VR work, including the "Alice in Solarland - Gitcoin Fundraiser" which he donated to charity, can be found on his [ArtStation](https://www.artstation.com/artwork/r9veqe). His contribution to the Cheerbot project has been invaluable.
+
+This tangible outcome of the Cheerbot project further validates the need for tools like Reality Merge to bridge the gap between digital design and physical fabrication across distributed teams.
 
 ---
 
