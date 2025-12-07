@@ -43,9 +43,9 @@ The following folder structure will be implemented within a single, shared Googl
     -   Have read/write access to the `shared/` directory.
     -   Do not have access to other users' directories.
 
-## 4. Orchestrator Logic (`reality_merge.py`)
+## 4. Orchestrator Logic (`py/reality_merge.py`)
 
-The `reality_merge.py` script will be updated to differentiate between super-admin and non-super-admin roles. This will be determined by a configuration setting or an environment variable (e.g., `REALITY_MERGE_ROLE=super_admin`).
+The `py/reality_merge.py` script will be updated to differentiate between super-admin and non-super-admin roles. This will be determined by a configuration setting or an environment variable (e.g., `REALITY_MERGE_ROLE=super_admin`).
 
 -   **Super Admin Mode:**
     -   Can create new user directories (`users/{username}/`).

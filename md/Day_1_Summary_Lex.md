@@ -27,7 +27,7 @@ Starting around **3:30 PM PST**, we began developing a custom infrastructure tha
 
 The true innovation, however, is the conductor of this orchestra: the AI agent. Over several hours, we developed a suite of CLI tools to empower the agent (first Seraph, now Lex) to manage this process seamlessly:
 -   **`sh/authenticate_gdrive.sh`:** A simple script to handle the complex OAuth2.0 flow, allowing the agent to securely access Google Drive on the user's behalf. This involved adapting logic from a previous project and debugging environment path issues to ensure it worked flawlessly.
--   **`reality_merge.py`:** A powerful Python CLI that acts as the agent's hands. We implemented a series of commands (`drive list`, `drive upload`, `drive delete`, `drive process`, and `drive move`) that allow the agent to intelligently manage files between the local environment and the cloud. This includes a "consume queue" workflow to process new assets and a mechanism to differentiate and correctly handle Google Docs versus binary files.
+-   **`py/reality_merge.py`:** A powerful Python CLI that acts as the agent's hands. We implemented a series of commands (`drive list`, `drive upload`, `drive delete`, `drive process`, and `drive move`) that allow the agent to intelligently manage files between the local environment and the cloud. This includes a "consume queue" workflow to process new assets and a mechanism to differentiate and correctly handle Google Docs versus binary files.
 
 By **7:00 PM PST**, the core of our innovative infrastructure was in place. We had built a robust, AI-drivable system to solve a problem that plagues the entire creative technology industry. The next step was to prove, unequivocally, why this solution was so vital.
 
