@@ -8,3 +8,6 @@ RealityMerge.zip
 __pycache__/
 *.pyc
 .venv/
+
+# User Management File
+users.json

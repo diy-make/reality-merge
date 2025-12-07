@@ -144,7 +144,7 @@ New users should follow these steps to get set up with the multi-user Google Dri
         -   Prompt you for your GitHub username.
         -   Store your username in the local git config (`git config user.name "..."`).
         -   Prompt you for your Google-hosted email address.
-        -   Communicate your GitHub username and Google email to the super-admin.
+        -   Communicate your GitHub username and Google email to the super-admin (who will store this information locally in a `.gitignore`'d `users.json` file).
         -   Guide you through the initial Google Drive authentication process.
 
 #### Security: Secret Scanning
