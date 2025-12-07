@@ -12,4 +12,4 @@ cd "$PROJECT_ROOT" || exit
 echo "Running environment setup..."
 
 # Run the Python setup script
-python3 setup.py
+python3 py/setup.py

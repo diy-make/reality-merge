@@ -40,7 +40,7 @@ This document outlines a 12-hour game plan for a 4-person team to build the "Rea
 
 -   **Person D (Backend & AI) (3.5 hours):**
     -   **Task:** Set up the supportive stack.
-    -   Familiarize with the Python CLI we've built (`reality_merge.py`).
+    -   Familiarize with the Python CLI we've built (`py/reality_merge.py`).
     -   Set up a simple Python Flask or FastAPI web server.
     -   Create an endpoint that can serve the `.glb` models Person C has prepared.
     -   Begin prototyping the "Shades" AI logic: write a Python script that can take two strings and use the Gemini API to generate a "merged" concept.

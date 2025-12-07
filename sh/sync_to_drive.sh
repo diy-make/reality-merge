@@ -7,18 +7,18 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 echo "--- Step 1: Setting up environment ---"
-bash "$SCRIPT_DIR/sh/setup_env.sh"
+bash "$SCRIPT_DIR/setup_env.sh"
 
 echo ""
 echo "--- Step 2: Ensuring Google Drive Authentication ---"
 # This will trigger the browser-based auth flow if token.json is missing or expired
-bash "$SCRIPT_DIR/sh/authenticate_gdrive.sh"
+bash "$SCRIPT_DIR/authenticate_gdrive.sh"
 
 echo ""
 echo "--- Step 3: Syncing project to Google Drive ---"
 # Activate venv and run the upload command
-source "$SCRIPT_DIR/.venv/bin/activate"
-python3 "$SCRIPT_DIR/reality_merge.py" drive upload
+source "$SCRIPT_DIR/../.venv/bin/activate"
+python3 "$SCRIPT_DIR/../py/reality_merge.py" drive upload
 
 echo ""
 echo "Sync script finished."

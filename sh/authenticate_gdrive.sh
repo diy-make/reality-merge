@@ -12,4 +12,4 @@ cd "$PROJECT_ROOT" || exit
 echo "Running authentication..."
 
 # Run the Python authentication script
-.venv/bin/python src/google_auth.py
+.venv/bin/python py/google_auth.py
