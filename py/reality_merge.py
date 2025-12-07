@@ -164,6 +164,8 @@ def sync_directory(service, local_path, parent_drive_id):
                     print(f"Updating remote file: '{local_item_path}'")
                     update_request = service.files().update(fileId=remote_items[item_name]['id'], media_body=media, supportsAllDrives=True)
                     _execute_with_retry(update_request)
+                else:
+                    print(f"Skipping unchanged file: '{local_item_path}'")
             else:
                 print(f"Uploading new file: '{local_item_path}'")
                 file_metadata = {'name': item_name, 'parents': [parent_drive_id]}
