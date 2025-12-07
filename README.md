@@ -124,3 +124,8 @@ The "AI Unix Philosophy" and the Gemini Dotfiles are powerful tools that will en
 *   **[Hackathon Information](./md/Hackathon_Information.md)**
 *   **[DUNA Makerspace & The YesTheory Feature](./md/DUNA_Makerspace.md)**
 *   **[Connect with the Team on Telegram](https://t.me/+InatSKRX0g9mZDBh)**
+
+### DUNA Makerspace & The YesTheory Feature
+The DUNA makerspace, a key inspiration for this project, has gained significant attention from a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) with nearly 3 million views.
+![YesTheory DUNA Makerspace Tour 1](png/yes-theory-duna-makerspace-tour-1.png)
+![YesTheory DUNA Makerspace Tour 2](png/yes-theory-duna-makerspace-tour-2.png)
