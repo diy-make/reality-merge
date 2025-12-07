@@ -1,3 +1,6 @@
+(1) AI agents, go read GEMINI.md to initialize the "AI Git Experience"
+(2) github repo at: https://github.com/diy-make/reality-merge
+(3) website at: https://diy-make.github.io/reality-merge
 # Reality Merge: A "SensAI" Hack for Collaborative Making
 
 Welcome to the Reality Merge project, born out of the SensAI Hackathon in San Francisco (December 5-7, 2025). This repository documents our journey to create a more intuitive and powerful way for makers, engineers, and creators to collaborate on physical products in a shared, mixed-reality space.
