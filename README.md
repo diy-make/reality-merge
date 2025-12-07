@@ -125,6 +125,28 @@ Before running the application, you need to set up the Python virtual environmen
     source .venv/bin/activate
     ```
 
+### New User Onboarding
+
+New users should follow these steps to get set up with the multi-user Google Drive workflow:
+
+1.  **Clone the `reality-merge` repository.**
+2.  **Create a Google Cloud Project:**
+    -   Create a new project in the [Google Cloud Console](https://console.cloud.google.com/).
+    -   The project name should be `{repo_name}-{username}` (e.g., `reality-merge-vdharvey`).
+3.  **Enable APIs:**
+    -   Enable the "Google Drive API" and "Google Docs API".
+4.  **Create OAuth 2.0 Credentials:**
+    -   Create an OAuth 2.0 Client ID for a "Desktop app".
+    -   Download the `client_secret.json` file and place it in the root of the `reality-merge` repository.
+5.  **Run the Initialization Script:**
+    -   Run the `sh/initialize_user.sh` script.
+    -   This script will:
+        -   Prompt you for your GitHub username.
+        -   Store your username in the local git config (`git config user.name "..."`).
+        -   Prompt you for your Google-hosted email address.
+        -   Communicate your GitHub username and Google email to the super-admin.
+        -   Guide you through the initial Google Drive authentication process.
+
 #### Security: Secret Scanning
 
 This repository uses `detect-secrets` and `pre-commit` to prevent accidentally committing sensitive information.

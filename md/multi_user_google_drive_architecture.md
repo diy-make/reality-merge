@@ -33,6 +33,13 @@ The following folder structure will be implemented within a single, shared Googl
 -   **`users/{username}/backup/`:** The user's backup folder. This is a one-way sync of their entire local project directory, including dotfiles and `.gitignore`.
 -   **`shared/`:** A common folder that all users can read from and write to. Files in this folder are not deleted by the agents.
 
+## 2.5. User Management
+
+To manage permissions and namespaces effectively, the super administrator will maintain a list of all users. This list will map each user's GitHub username to their Google-hosted email address.
+
+-   **Super Administrator's Responsibility:** The super administrator is responsible for maintaining this user list and using it to grant the appropriate permissions on Google Drive.
+-   **Non-Super Admin Agent's Responsibility:** During the onboarding process, a non-super-admin Gemini agent must prompt the user for their Google email address and communicate this information to the super administrator. This will be part of the `sh/initialize_user.sh` script's functionality.
+
 ## 3. Permissions Model
 
 -   **Super Administrator:**
@@ -72,7 +79,8 @@ The following steps will be documented in the `README.md` for new users like `vd
     -   This script will:
         -   Prompt the user for their GitHub username.
         -   Store the username in the local git config (`git config user.name "..."`).
-        -   Make an API call to a super-admin service (or prompt the user to contact the super-admin) to have their user directories created on Google Drive.
+        -   Prompt the user for their Google-hosted email address.
+        -   Communicate the GitHub username and Google email to the super-admin (e.g., by creating a file in the super-admin's `inbox/`).
         -   Guide the user through the initial Google Drive authentication process.
 
 ## 6. Documentation Plan
