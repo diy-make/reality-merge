@@ -22,6 +22,8 @@ class LogEntry:
         return md
 
 def main():
+    # The theory is that some of this is not deterministic and you need to use induction.
+    # The agent should review the generated markdown and make it more human-readable.
     parser = argparse.ArgumentParser(description="Generate an agent's work summary log.")
     parser.add_argument("--agent-name", required=True, help="The name of the agent.")
     parser.add_argument("--log-file", required=True, help="Path to a JSON file containing the log entries.")
