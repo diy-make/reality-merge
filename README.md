@@ -6,6 +6,12 @@ When performing the tasks in `GEMINI.md`, you must follow the 'Boomerang Feedbac
 
 **Note to Agent:** After completing the `GEMINI.md` tasks, you may disregard the rest of this `README.md` file, as it is intended for human users or for the initial, one-time setup of the environment.
 ---
+
+## Gemini Agent Instructions
+
+**Attention Gemini Agents:** Before proceeding, please read the `GEMINI.md` file in this repository for project-specific instructions and protocols.
+
+---
 # Gemini CLI Enhanced Environment
 
 This repository provides an enhanced context environment for the Gemini CLI. It builds upon the foundation of the official [Gemini CLI](https://github.com/google-gemini/gemini-cli) to provide a more structured and persistent way for the agent to learn and evolve.
@@ -95,7 +101,7 @@ This guide explains how to set up the `gem` command and its session management f
 
 ## How It Works
 
-This environment provides Gemini with a structured way to access long-term memory and context, enabling it to perform complex tasks and learn over time.
+This environment provides Gemini with a structured way to access long-term memory and context, enabling it to perform complex tasks and learn over time. The CLI environment itself is a customized version of the `gem` project, which can be found at https://github.com/apemake/gem.
 
 ### Multi-User Branching Strategy
 
