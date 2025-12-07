@@ -19,6 +19,14 @@ The team's progress and project details were also documented on Devpost.
 *   **[1200-SF24 Reality Merge _ Devpost.html](../chat/html/1200-SF24%20Reality%20Merge%20_%20Devpost.html):** The official Devpost page for the Reality Merge project.
 *   **[Kyle Smith's (kyle423) software portfolio _ Devpost.html](../chat/html/Kyle%20Smith's%20(kyle423)%20software%20portfolio%20_%20Devpost.html):** The Devpost portfolio of the project's Super Administrator, featuring the Reality Merge project.
 
+## Community Shout-out
+
+A big thank you to **0ya 👻🌀** from the Honduran makerspace for their support and for sharing our project on social media! 0ya is a supporter from one of the makerspaces that we aim to connect with through the Reality Merge project, and their enthusiasm for our work is greatly appreciated.
+
+![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../../chat/images/69-0ya-shares-makediy-tweet.png)
+
+You can see the tweet here: [https://x.com/make__diy/status/1997791103110754426](https://x.com/make__diy/status/1997791103110754426)
+
 ## Chronological Summary of Collaboration
 
 ### Day 1: Friday, December 5, 2025
