@@ -3,7 +3,7 @@
 # This script runs the Python-based virtual environment setup.
 
 # Get the directory of the script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+SCRIPT_DIR=$(dirname "$0")
 PROJECT_ROOT="$SCRIPT_DIR/.."
 
 echo "Changing to project root: $PROJECT_ROOT"

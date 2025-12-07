@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.errors import HttpError
 from googleapiclient.discovery import build
-from src.google_auth import get_credentials, get_google_drive_service
+from .google_auth import get_credentials, get_google_drive_service
 
 import subprocess # Added import
 
