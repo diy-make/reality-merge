@@ -147,6 +147,8 @@ Day 3 began with the retirement of Zenith and the arrival of Apollo. The team co
 *   ![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
 *   ![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
 *   ![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
+*   ![Cheerbot YouTube Channel](../chat/images/75-cheerbot-youtube-channel.png)
+*   ![ChatGPT summarizes Reality Merge](../chat/images/76-chatgpt-summarizes-reality-merge.png)
 
 ## Submission
 
