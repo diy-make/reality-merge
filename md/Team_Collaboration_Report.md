@@ -10,23 +10,6 @@ This report summarizes the team's collaboration during the SensAI Hackathon, fro
 *   **Galanafai** (Galanafai Windross, "Gweezy")
 *   **JB87** (Josh) - from Bonfire
 
-## Hackathon Submission
-
-The project was successfully submitted to the SensAI hackathon on December 7, 2025, at 1:42 PM by Gweezy.
-
-The team's progress and project details were also documented on Devpost.
-
-*   **[1200-SF24 Reality Merge _ Devpost.html](../chat/html/1200-SF24%20Reality%20Merge%20_%20Devpost.html):** The official Devpost page for the Reality Merge project.
-*   **[Kyle Smith's (kyle423) software portfolio _ Devpost.html](../chat/html/Kyle%20Smith's%20(kyle423)%20software%20portfolio%20_%20Devpost.html):** The Devpost portfolio of the project's Super Administrator, featuring the Reality Merge project.
-
-## Community Shout-out
-
-A big thank you to **0ya 👻🌀** from the Honduran makerspace for their support and for sharing our project on social media! 0ya is a supporter from one of the makerspaces that we aim to connect with through the Reality Merge project, and their enthusiasm for our work is greatly appreciated.
-
-![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../../chat/images/69-0ya-shares-makediy-tweet.png)
-
-You can see the tweet here: [https://x.com/make__diy/status/1997791103110754426](https://x.com/make__diy/status/1997791103110754426)
-
 ## Chronological Summary of Collaboration
 
 ### Day 1: Friday, December 5, 2025
@@ -133,34 +116,6 @@ Day 3 began with the retirement of Zenith and the arrival of Apollo. The team co
 *   **Finalizing Sync Systems:** Apollo began implementing the new workflow for the `backup`, `inbox`, and `shared` sync systems.
 *   **CAD and Networking:** Gweezy continued to work on the CAD models and networking.
 *   **Hardware:** mu_jax continued to work on the hardware for the bot.
-*   **Submission:** The team successfully submitted the project to the SensAI hackathon.
-
-**Media from Day 3:**
-
-*   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-01.jpg)
-*   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-04.jpg)
-*   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-05.jpg)
-*   ![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-07.jpg)
-*   ![Day 2 Recap Social Post](../chat/images/70-day-2-recap-social-post.jpg)
-*   ![Day 1 Recap Tweet](../chat/images/71-day-1-recap-tweet.jpg)
-*   ![Reality Merge Hackathon Table](../chat/images/72-reality-merge-hackathon-table.jpg)
-*   ![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
-*   ![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
-*   ![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
-*   ![Cheerbot YouTube Channel](../chat/images/75-cheerbot-youtube-channel.png)
-*   ![ChatGPT summarizes Reality Merge](../chat/images/76-chatgpt-summarizes-reality-merge.png)
-
-## Submission
-
-The project was successfully submitted to the SensAI hackathon on December 7, 2025, at 1:42 PM by Gweezy.
-
-## Devpost Presence
-
-The team's progress and project details were also documented on Devpost.
-
-*   **[1200-SF24 Reality Merge _ Devpost.html](../chat/html/1200-SF24%20Reality%20Merge%20_%20Devpost.html):** The official Devpost page for the Reality Merge project.
-*   **[Kyle Smith's (kyle423) software portfolio _ Devpost.html](../chat/html/Kyle%20Smith's%20(kyle423)%20software%20portfolio%20_%20Devpost.html):** The Devpost portfolio of the project's Super Administrator, featuring the Reality Merge project.
-
 
 ## Media Gallery
 
@@ -204,6 +159,8 @@ The team's progress and project details were also documented on Devpost.
 ![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
 ![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
 ![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
+![Cheerbot YouTube Channel](../chat/images/75-cheerbot-youtube-channel.png)
+![ChatGPT summarizes Reality Merge](../chat/images/76-chatgpt-summarizes-reality-merge.png)
 
 ### Videos
 
@@ -211,17 +168,3 @@ The team's progress and project details were also documented on Devpost.
 
 *   [Team Discord Video](../chat/videos/574e66d547c2481488821ab6a295e743.mov)
 *   [Team Discord Video](../chat/videos/6b14d24f9c9040808fdfdf12f74ea5f7.mov)
-
-## YouTube Video
-
-[Link to the YouTube video](https://youtu.be/0-2tw2pezdc)
-
-*Awaiting summary and relevance from the user.*
-
-## Code Snippets
-
-The following code snippets were provided, showcasing the AI and team management aspects of the project.
-
-```
-<The user has provided a large number of code snippets. I need to understand their relevance and incorporate them into the report. The user mentioned "gemini", "team", "AI" and "session", so they are likely related to the AI agent and team management aspects of the project.>
-```
