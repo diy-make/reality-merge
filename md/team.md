@@ -4,4 +4,4 @@
 *   **vdharvey** (Vincent Harvey, "Wizzey")
 *   **ptayab** (Princess Tayab, "mu_jax")
 *   **Galanafai** (Galanafai Windross, "Gweezy")
-*   **JB87** (Josh) - from Bonfire
+*   **JB87** (Josh) - from Bonfire (Observer)
