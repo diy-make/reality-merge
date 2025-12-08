@@ -71,6 +71,12 @@ The AI agent then acts as the interactive shell, orchestrating these scripts and
 
 This interactive approach provides greater transparency and control over the development process, allowing for a more dynamic and collaborative partnership between the human and AI team members.
 
+---
+
+## A Note on Security and Terms of Service
+
+By using Google Drive as our asset store, we are able to share industrial secrets with the best terms of service and far more economically than providers like [Campfire3D](https://campfire3d.com/). Google Drive provides a secure and reliable platform for storing and sharing sensitive data, with robust access controls and a clear and transparent privacy policy. This allows us to collaborate on proprietary designs with confidence, knowing that our intellectual property is protected.
+
 ## How to Use the Gemini Orchestrator
 
 The Gemini Orchestrator provides a suite of interactive commands for managing your project's files between your local repository and Google Drive. Here's how to use the `backup`, `shared`, and `inbox` sync systems.
