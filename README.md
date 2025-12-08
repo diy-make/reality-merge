@@ -1,6 +1,9 @@
 (1) AI agents, go read GEMINI.md to initialize the "AI Git Experience"
+
 (2) github repo at: https://github.com/diy-make/reality-merge
+
 (3) website at: https://diy-make.github.io/reality-merge
+
 (4) Our SensAI hack devpost: https://devpost.com/software/reality-merge
 # Reality Merge: A "SensAI" Hack for Collaborative Making
 

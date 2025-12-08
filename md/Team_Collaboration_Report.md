@@ -147,21 +147,6 @@ Day 3 began with the retirement of Zenith and the arrival of Apollo. The team co
 ![Telegram Photo - December 6, 2025](../chat/photos/photo_17@06-12-2025_23-09-51.jpg)
 ![Telegram Photo - December 6, 2025](../chat/photos/photo_18@06-12-2025_23-09-51.jpg)
 
-**December 7, 2025**
-
-![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-01.jpg)
-![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-04.jpg)
-![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-05.jpg)
-![New Images from Day 3](../chat/images/photo_2025-12-07_13-29-07.jpg)
-![Day 2 Recap Social Post](../chat/images/70-day-2-recap-social-post.jpg)
-![Day 1 Recap Tweet](../chat/images/71-day-1-recap-tweet.jpg)
-![Reality Merge Hackathon Table](../chat/images/72-reality-merge-hackathon-table.jpg)
-![Make.DIY Twitter Timeline](../chat/images/73-makediy-twitter-timeline.jpg)
-![Team Photo with Cheerbot](../chat/images/74-team-photo-with-cheerbot.jpg)
-![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../chat/images/69-0ya-shares-makediy-tweet.png)
-![Cheerbot YouTube Channel](../chat/images/75-cheerbot-youtube-channel.png)
-![ChatGPT summarizes Reality Merge](../chat/images/76-chatgpt-summarizes-reality-merge.png)
-
 ### Videos
 
 **December 6, 2025**
