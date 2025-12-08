@@ -15,6 +15,7 @@ users.json
 # Local folders for Drive sync
 inbox/
 shared/
+chat/
 
 # Sync logs
 sync_log.txt
