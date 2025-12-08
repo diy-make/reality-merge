@@ -43,6 +43,16 @@ This tangible outcome of the Cheerbot project further validates the need for too
 
 ---
 
+## Customer Discovery: The Lean Method in Action
+
+At Ixian.tech, we believe in practical application and continuous learning within a cosmolocal milieu, especially in continued education industrial community popups. This hackathon is no exception. We are rigorously applying Steve Blank's Lean method for customer discovery, ensuring our efforts are grounded in real-world needs.
+
+This iterative process of understanding our users and validating our solutions has been a core part of our approach, building on the experience gained from previous events. For instance, at ETHGlobal just a couple of weeks ago, we showcased our "Field Hacking Method" for this very purpose: [https://ethglobal.com/showcase/field-hacking-method-pv50n](https://ethglobal.com/showcase/field-hacking-method-pv50n).
+
+This continuous engagement with potential users and real-world scenarios ensures that the "Reality Merge" project remains practical, relevant, and impactful for the makerspace community.
+
+---
+
 ## The AI Unix Philosophy: An Interactive Workflow
 
 The core of our "SensAI Hack" is the "AI Unix Philosophy". This approach emphasizes a more interactive and collaborative experience between the user and the AI agent.
