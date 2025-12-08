@@ -1,6 +1,7 @@
 (1) AI agents, go read GEMINI.md to initialize the "AI Git Experience"
 (2) github repo at: https://github.com/diy-make/reality-merge
 (3) website at: https://diy-make.github.io/reality-merge
+(4) Our SensAI hack devpost: https://devpost.com/software/reality-merge
 # Reality Merge: A "SensAI" Hack for Collaborative Making
 
 Welcome to the Reality Merge project, born out of the SensAI Hackathon in San Francisco (December 5-7, 2025). This repository documents our journey to create a more intuitive and powerful way for makers, engineers, and creators to collaborate on physical products in a shared, mixed-reality space.
@@ -29,6 +30,8 @@ This AI-driven orchestration solves a critical problem for distributed creative 
 Our project's very existence, and the tangible need for between-makerspace collaboration, is rooted in the "Cheerbot" initiative ([github.com/cheerbotme](https://github.com/cheerbotme)). This isn't a hypothetical need; it stems directly from the customer discovery documented in our [OSO Hack submission](https://github.com/diy-make/OSO_hack).
 
 The core of this collaboration involved a VR chassis originally sculpted by Colton Orr, an acclaimed VR sculptor, using a Meta VR headset. This 3D model, born in one makerspace, became the focal point for a cross-continental interaction between the San Francisco and Honduran makerspaces. The very demo video submitted to SensAI, a mere 45 seconds long, powerfully showcases this interaction: the virtual Cheerbot chassis, brought to life through our system.
+
+[![Reality Merge Demo Video](https://img.youtube.com/vi/0-2tw2pezdc/0.jpg)](https://youtu.be/0-2tw2pezdc?si=496LGbMVcq0FFVQ0)
 
 During the hackathon, we also physically made a Cheerbot robot, demonstrating the real-world impact of our virtual collaboration.
 
