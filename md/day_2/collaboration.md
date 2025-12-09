@@ -14,40 +14,40 @@ Day 2 was a day of intense development and collaboration. The team focused on im
 
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_8@06-12-2025_11-21-09.jpg)
+      2025](../../png/photo_8@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_9@06-12-2025_11-21-09.jpg)
+      2025](../../png/photo_9@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_10@06-12-2025_11-21-09.jpg)
+      2025](../../png/photo_10@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_11@06-12-2025_11-21-09.jpg)
+      2025](../../png/photo_11@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_12@06-12-2025_11-40-05.jpg)
+      2025](../../png/photo_12@06-12-2025_11-40-05.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_13@06-12-2025_20-46-17.jpg)
+      2025](../../png/photo_13@06-12-2025_20-46-17.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_14@06-12-2025_21-13-19.jpg)
+      2025](../../png/photo_14@06-12-2025_21-13-19.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_15@06-12-2025_21-13-40.jpg)
+      2025](../../png/photo_15@06-12-2025_21-13-40.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_16@06-12-2025_22-03-20.jpg)
+      2025](../../png/photo_16@06-12-2025_22-03-20.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_17@06-12-2025_23-09-51.jpg)
+      2025](../../png/photo_17@06-12-2025_23-09-51.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../gitignore/chat/photos/photo_18@06-12-2025_23-09-51.jpg)
+      2025](../../png/photo_18@06-12-2025_23-09-51.jpg)
 *   ![Team Discord Video -
       December 6,
-      2025](../../gitignore/chat/videos/574e66d547c2481488821ab6a295e743.mov)
+      2025](../../videos/574e66d547c2481488821ab6a295e743.mov)
 *   ![Team Discord Video -
       December 6,
-      2025](../../gitignore/chat/videos/6b14d24f9c9040808fdfdf12f74ea5f7.mov)
+      2025](../../videos/6b14d24f9c9040808fdfdf12f74ea5f7.mov)
