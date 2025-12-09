@@ -13,7 +13,6 @@ __pycache__/
 users.json
 
 # Local folders for Drive sync
-gitignore/
 inbox/
 shared/
 chat/
