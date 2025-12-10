@@ -1,0 +1,11 @@
+{
+  "project_organization": {
+    "name": "Project Organization",
+    "rules": [
+      {
+        "name": "Hackathon Mode",
+        "description": "The `md/` directory is organized in a 'hackathon mode', which means that documentation is structured day-by-day in `day_X` folders."
+      }
+    ]
+  }
+}
