@@ -14,6 +14,7 @@ users.json
 
 # Local folders for Drive sync
 gitignore/
+driveignored/
 inbox/
 shared/
 chat/

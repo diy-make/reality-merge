@@ -47,7 +47,7 @@ Day 2 was a day of intense development and collaboration. The team focused on im
       2025](../../png/photo_18@06-12-2025_23-09-51.jpg)
 *   ![Team Discord Video -
       December 6,
-      2025](../../videos/574e66d547c2481488821ab6a295e743.mov)
+      2025](../../mov/reality-merge-demo-1.mov)
 *   ![Team Discord Video -
       December 6,
-      2025](../../videos/6b14d24f9c9040808fdfdf12f74ea5f7.mov)
+      2025](../../mov/reality-merge-demo-2.mov)
