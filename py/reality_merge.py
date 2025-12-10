@@ -26,7 +26,7 @@ if not user_name:
 SYNC_FOLDER_NAME = f"{user_name}_gemini_only_including_gitignore"
 
 # Exclude directories and files from the upload
-EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion']
+EXCLUDE_DIRS = ['.git', '.venv', '__pycache__', 'notion', 'driveignore']
 EXCLUDE_FILES = ['token.json', 'client_secret.json']
 
 # --- HELPER FUNCTIONS ---
