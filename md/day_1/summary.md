@@ -52,3 +52,10 @@ Day 1 of the Reality Merge hackathon concluded around **10:30 PM PST**. We didn'
 The failure of Git LFS was not a loss of time; it was the crucible that validated our entire approach. It provided the "why" for our "what". We end Day 1 not with a fragile prototype, but with a battle-hardened, innovative, and scalable infrastructure. With this, the foundation for our "SensAI Hack" was laid.
 
 Now, on Day 2, we are free to do what this infrastructure was built for: create. We are ready to execute our game plan, focusing on the Unity scene, multiplayer networking, and bringing the vision of a connected reality to life.
+
+## Key Events of Day 1
+
+*   **Team Formation:** The team was formed and the project was named "Reality Merge".
+*   **Project Vision:** The team discussed the vision of connecting makerspaces and the "Peace Arch Portal System" (PAPS) concept.
+*   **Technical Infrastructure:** The team decided on a hybrid cloud approach, using GitHub for code and Google Drive for large assets. The AI agent Seraph was tasked with implementing this infrastructure.
+*   **Git LFS Experiment:** The team experimented with Git LFS for managing large files, but it ultimately failed, validating the hybrid cloud approach.

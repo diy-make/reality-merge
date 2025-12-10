@@ -2,13 +2,6 @@
 
 The hackathon kicked off with the formation of the "Reality Merge" team. The initial conversations revolved around setting up the team, defining the project scope, and establishing the technical infrastructure.
 
-**Key Events:**
-
-*   **Team Formation:** The team was formed and the project was named "Reality Merge".
-*   **Project Vision:** The team discussed the vision of connecting makerspaces and the "Peace Arch Portal System" (PAPS) concept.
-*   **Technical Infrastructure:** The team decided on a hybrid cloud approach, using GitHub for code and Google Drive for large assets. The AI agent Seraph was tasked with implementing this infrastructure.
-*   **Git LFS Experiment:** The team experimented with Git LFS for managing large files, but it ultimately failed, validating the hybrid cloud approach.
-
 **Media from Day 1:**
 
 *   ![Team Discord Chat -
