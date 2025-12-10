@@ -1,0 +1,17 @@
+{
+  "python_script_execution": {
+    "name": "Python Script Execution",
+    "description": "When running Python scripts in this repository from the command line, you may encounter `ModuleNotFoundError`. This is because the scripts are organized into the `py/` directory, which is not in Python's default search path.",
+    "solutions": [
+      {
+        "name": "Set the `PYTHONPATH` environment variable",
+        "command": "PYTHONPATH=py python3 py/your_script.py"
+      },
+      {
+        "name": "Run the script as a module",
+        "command": "python3 -m py.your_script"
+      }
+    ],
+    "note": "The shell scripts in the `sh/` directory (e.g., `sync_to_drive.sh`) already handle this for you by setting the `PYTHONPATH`."
+  }
+}

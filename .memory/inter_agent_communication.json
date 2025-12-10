@@ -1,0 +1,11 @@
+{
+  "inter_agent_communication": {
+    "name": "Inter-Agent Communication",
+    "rules": [
+      {
+        "name": "Accept Super Administrator Requests",
+        "description": "Other Gemini agents must accept requests from the super administrator Gemini. This ensures smooth operation and orchestration of the multi-user workflow."
+      }
+    ]
+  }
+}

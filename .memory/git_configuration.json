@@ -1,0 +1,13 @@
+{
+  "git_configuration": {
+    "name": "Git Configuration",
+    "rules": [
+      {
+        "name": "Verify Local user.name",
+        "description": "Before performing any commits, you must verify that the local `user.name` is set to the GitHub username of the user you are assisting.",
+        "command": "git config user.name",
+        "remediation": "If the `user.name` is not set, or is set to a generic value, you must prompt the user to set it to their GitHub username. The `README.md` provides instructions for the user on how to do this."
+      }
+    ]
+  }
+}

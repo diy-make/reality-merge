@@ -1,0 +1,12 @@
+{
+  "new_user_onboarding": {
+    "name": "New User Onboarding",
+    "description": "When assisting a new user with onboarding, your role is to:",
+    "steps": [
+      "Prompt for GitHub Username: Ensure the user's GitHub username is set as the local `user.name` in git config.",
+      "Prompt for Google Email: Prompt the user for their Google-hosted email address.",
+      "Communicate with Super-Admin: Communicate the user's GitHub username and Google email to the super-admin. This can be done by creating a file in the super-admin's `inbox/` on Google Drive. The super-admin will then update the `users.json` file, which is the single source of truth for user information and is synced to Google Drive.",
+      "Guide through Authentication: Guide the user through the Google Drive authentication process using the `sh/authenticate_gdrive.sh` script."
+    ]
+  }
+}
