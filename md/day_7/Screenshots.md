@@ -20,3 +20,12 @@
 ![Content Placeholder](../../png/111-content-placeholder.png)
 *A placeholder image for content, likely used during development.*
 *   **Key Takeaway:** Indicates a stage of development where content was pending.
+
+---
+
+## 117-agent-plan-to-organize-png-directory.png
+
+**Agent Plan to Organize PNG Directory**
+![agent-plan-to-organize-png-directory](../../png/117-agent-plan-to-organize-png-directory.png)
+*The agent is outlining a plan to organize the `png/` directory, including deleting thumbnails, moving JPEGs, and renaming un-indexed files.*
+*   **Key Takeaway:** The agent is taking a methodical approach to cleaning up and organizing the project's image assets.

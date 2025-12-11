@@ -83,3 +83,12 @@
 ![YesTheory DUNA Makerspace Tour 2](../../png/01g-yes-theory-duna-makerspace-tour-2.png)
 *Another screenshot from the YesTheory video featuring the DUNA makerspace.*
 *   **Key Takeaway:** The project draws inspiration from real-world collaborative spaces.
+
+---
+
+## 124-portal-project-telegram-chat.jpg
+
+**Portal Project Telegram Chat**
+![portal-project-telegram-chat](../../jpg/124-portal-project-telegram-chat.jpg)
+*A screenshot of the Telegram chat for the "Portal Project", showing a discussion about teleoperating a robot as a portal.*
+*   **Key Takeaway:** The project is being discussed and developed in a collaborative chat environment.

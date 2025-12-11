@@ -39,3 +39,21 @@
 *The agent identifies the four agents that were active before it by analyzing the `.chat/used_agent_names.json` file.*
 
 *   **Key Takeaway:** The agent is able to use the project's own metadata to learn about its own history and the history of the swarm.
+
+---
+
+## 121-agent-updates-todo-list-and-commits.png
+
+**Agent Updates Todo List and Commits**
+![agent-updates-todo-list-and-commits](../../png/121-agent-updates-todo-list-and-commits.png)
+*The agent is updating its todo list and committing the changes to the `.chat` repository.*
+*   **Key Takeaway:** The agent is using a todo list to track its tasks and is committing its progress to the repository.
+
+---
+
+## 122-agent-acknowledges-mistake-and-reformulates-plan.png
+
+**Agent Acknowledges Mistake and Reformulates Plan**
+![agent-acknowledges-mistake-and-reformulates-plan](../../png/122-agent-acknowledges-mistake-and-reformulates-plan.png)
+*The agent acknowledges a mistake in its plan and reformulates it based on user feedback.*
+*   **Key Takeaway:** The agent is able to learn from its mistakes and adapt its plan accordingly.
