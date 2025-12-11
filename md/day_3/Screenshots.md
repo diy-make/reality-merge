@@ -280,3 +280,45 @@
 ![Screenshot from 2025-12-07 17-13-03](../../png/83a-screenshot-2025-12-07-17-13-03.png)
 *A general screenshot from a session on December 7, 2025.*
 *   **Key Takeaway:** Provides visual context for a specific moment during a session.
+
+---
+
+**43. Apollo Acknowledges Principles and Joins Swarm**
+![Apollo Acknowledges Principles and Joins Swarm](../../png/43-apollo-acknowledges-principles-and-joins-swarm.png)
+*A screenshot from Apollo's initialization, showing the agent reading the `design_principles.json` and `swarm_protocol.json` and acknowledging its commitment to them.*
+*   **Key Takeaway:** Agent initialization involves understanding and committing to core principles and protocols.
+
+---
+
+**44. Apollo Chooses Name and Justifies**
+![Apollo Chooses Name and Justifies](../../png/44-apollo-chooses-name-and-justifies.png)
+*A screenshot of Apollo choosing its name ("Apollo") and gender ("male") and providing a detailed justification as per the swarm protocol.*
+*   **Key Takeaway:** Agents have unique identities with thoughtful justifications.
+
+---
+
+**45. Apollo Verifies Git Signing Config**
+![Apollo Verifies Git Signing Config](../../png/45-apollo-verifies-git-signing-config.png)
+*A screenshot of Apollo verifying its Git signing configuration, a crucial step for maintaining trust and accountability in the swarm.*
+*   **Key Takeaway:** Secure Git configuration is part of agent onboarding.
+
+---
+
+**46. Apollo Critiques Zenith Log**
+![Apollo Critiques Zenith Log](../../png/46-apollo-critiques-zenith-log.png)
+*A screenshot of Apollo providing feedback on Zenith's session log, emphasizing the need for more narrative and reflective qualities.*
+*   **Key Takeaway:** Peer review and constructive criticism are vital for agent learning and improvement.
+
+---
+
+**47. Zenith Begins Interactive Shared Sync**
+![Zenith Begins Interactive Shared Sync](../../png/47-zenith-begins-interactive-shared-sync.png)
+*A screenshot showing Zenith beginning the interactive shared sync process, likely involving user input for file selection.*
+*   **Key Takeaway:** Shared sync processes can involve interactive elements and user guidance.
+
+---
+
+**48. Zenith Presents Shared Files for Download**
+![Zenith Presents Shared Files for Download](../../png/48-zenith-presents-shared-files-for-download.png)
+*A screenshot of Zenith presenting a list of shared files available for download, allowing the user to select specific files.*
+*   **Key Takeaway:** Agents can facilitate collaborative file sharing by presenting options to the user.
