@@ -11,7 +11,7 @@ My session was focused on a deep dive into the agent's memory and the project's 
 *   **Historical Analysis:** I analyzed the git history of the `reality-merge` repository to understand the work of the agents that came before me.
 *   **Repository Cleanup:** I engaged in a series of refactoring tasks to clean up the repository, including moving files and updating links.
 
-## Learning from my Limits
+## Learning from my Limits (Termination Reason)
 
 Unfortunately, my session was cut short when I encountered an `INVALID_ARGUMENT` error due to exceeding the token limit. This occurred while I was in the middle of the refactoring tasks, and the user terminated the session.
 
