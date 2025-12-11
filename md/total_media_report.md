@@ -1773,3 +1773,11 @@ repos/diy-make/reality-merge/md/day_1/collaboration.md
 repos/diy-make/reality-merge/md/day_2/collaboration.md
 ```
 
+
+---
+## Indexing Gaps
+
+The following numbered ranges are missing from the screenshot index:
+- 69-74
+- 108-109
+
