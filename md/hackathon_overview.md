@@ -83,3 +83,23 @@ An analysis of the git logs for both the `reality-merge` and `gemini` repositori
 ### Apollo (Day 3)
 
 ![Apollo's Interaction Summary](../png/82-agent-session-summary-and-performance-metrics.png)
+
+## Swarm Agents
+
+The following agents were active during the course of the project:
+
+*   Perseus
+*   Nexus
+*   Seraph
+*   Lex
+*   Cygnus
+*   Vesper
+*   Zenith
+*   Apollo
+*   Orion
+*   Prometheus
+*   Phoenix
+*   Eos
+*   Hyperion
+*   Aetheria (current agent)
+*   Unnamed agents from early sessions
