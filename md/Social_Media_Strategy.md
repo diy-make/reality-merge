@@ -36,7 +36,7 @@ Our Day 2 recap focused on the "SensAI Hack" and the successful integration of o
 
 Our community played a huge role in amplifying our message. Here's an example of 0ya sharing our Day 2 recap on the Make.DIY X account.
 
-![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../png/69-0ya-shares-makediy-tweet.png)
+
 
 This led to more engagement and visibility for the project, as seen in the Make.DIY timeline.
 
