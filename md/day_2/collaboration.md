@@ -14,37 +14,37 @@ Day 2 was a day of intense development and collaboration. The team focused on im
 
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_8@06-12-2025_11-21-09.jpg)
+      2025](../../jpg/45-frontier-makerspace-sign.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_9@06-12-2025_11-21-09.jpg)
+      2025](../../jpg/46-custom-arcade-cabinet.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_10@06-12-2025_11-21-09.jpg)
+      2025](../../jpg/photo_10@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_11@06-12-2025_11-21-09.jpg)
+      2025](../../jpg/photo_11@06-12-2025_11-21-09.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_12@06-12-2025_11-40-05.jpg)
+      2025](../../jpg/photo_12@06-12-2025_11-40-05.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_13@06-12-2025_20-46-17.jpg)
+      2025](../../jpg/photo_13@06-12-2025_20-46-17.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_14@06-12-2025_21-13-19.jpg)
+      2025](../../jpg/photo_14@06-12-2025_21-13-19.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_15@06-12-2025_21-13-40.jpg)
+      2025](../../jpg/32-how-to-submit-your-project-google-drive.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_16@06-12-2025_22-03-20.jpg)
+      2025](../../jpg/33-cheerbot-on-phone.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_17@06-12-2025_23-09-51.jpg)
+      2025](../../jpg/34-3d-printing-parts.jpg)
 *   ![Telegram Photo - December
       6,
-      2025](../../png/photo_18@06-12-2025_23-09-51.jpg)
+      2025](../../jpg/35-3d-printer-and-terminal.jpg)
 *   ![Team Discord Video -
       December 6,
       2025](../../mov/reality-merge-demo-1.mov)
