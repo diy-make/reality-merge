@@ -21,14 +21,14 @@ Our main achievement during the hackathon was the creation of a **Gemini-powered
 
 This AI-driven orchestration solves a critical problem for distributed creative teams and is the core "SensAI hack" of our project.
 
-![Google Drive Success](png/gdrive-download-success.png)
+![Google Drive Success](./png/03c-gdrive-download-success.png)
 *Proof of our custom script successfully handling a large CAD file, validating our hybrid cloud approach.*
 
 ---
 
 ## The Cheerbot Story: Our Real-World Collaboration Catalyst
 
-![The Cheerbot](png/cheerbot2.jpg)
+![The Cheerbot](./jpg/125-cheerbot-3d-print.jpg)
 
 Our project's very existence, and the tangible need for between-makerspace collaboration, is rooted in the "Cheerbot" initiative ([github.com/cheerbotme](https://github.com/cheerbotme)). This isn't a hypothetical need; it stems directly from the customer discovery documented in our [OSO Hack submission](https://github.com/diy-make/OSO_hack).
 
@@ -88,10 +88,10 @@ The `backup` sync is a one-way push of your local repository to a `backup` folde
 **How it works:**
 
 1.  **Initiate the backup:** The AI agent will start the backup process, first by listing all the local files to be backed up.
-    ![Apollo listing local files for backup](png/66-apollo-awaits-user-selection-for-upload.png)
+    ![Apollo listing local files for backup](./png/66-apollo-awaits-user-selection-for-upload.png)
 2.  **Compare with remote:** The agent will then compare the local files with the remote `backup` folder on your Google Drive to identify new or modified files.
 3.  **Confirm upload:** The agent will present you with a list of new or modified files and ask for your confirmation to upload them.
-    ![Apollo asking for confirmation to upload files](png/58-apollo-prompts-team-for-introductions.png)
+    ![Apollo asking for confirmation to upload files](./png/58-apollo-prompts-team-for-introductions.png)
 4.  **Upload:** Once you confirm, the agent will upload the new or modified files to your Google Drive.
 
 ### The `shared` Sync
@@ -101,9 +101,9 @@ The `shared` sync is an interactive process for downloading files from a shared 
 **How it works:**
 
 1.  **List remote files:** The agent will list the files available in the remote `shared` folder.
-    ![Zenith listing remote shared files](png/47-zenith-begins-interactive-shared-sync.png)
+    ![Zenith listing remote shared files](./png/47-zenith-begins-interactive-shared-sync.png)
 2.  **Select files to download:** The agent will present you with a list of new files and ask you to select which ones you want to download.
-    ![Zenith presenting shared files for download](png/48-zenith-presents-shared-files-for-download.png)
+    ![Zenith presenting shared files for download](./png/48-zenith-presents-shared-files-for-download.png)
 3.  **Download:** The agent will then download the selected files to your local `shared/` directory.
 
 ### The `inbox` Sync
@@ -114,7 +114,7 @@ The `inbox` sync is a destructive operation that processes files from your Googl
 
 1.  **List inbox files:** The agent will list the files in your remote `inbox` folder.
 2.  **Process and download:** The agent will then download and process each file. For example, it will convert Google Docs to Markdown.
-    ![Zenith processing the inbox](png/39-zenith-processes-inbox.png)
+    ![Zenith processing the inbox](./png/39-zenith-processes-inbox.png)
 3.  **Delete remote file:** After a file has been successfully processed and downloaded, it will be deleted from your Google Drive `inbox`.
 
 ## The Gemini Dotfiles: Our "Side-Quest"
@@ -127,7 +127,7 @@ These dotfiles are the engine that powers our "SensAI Hack". They provide the sc
 
 **Reality Merge** is inspired by the **Peace Arch Portal System (PAPS)**, a concept for connecting physical makerspaces around the world. Our goal is to build the digital infrastructure that will allow creators in different locations to collaborate on physical products in a shared, mixed-reality space.
 
-![The Reality Merge Concept](png/reality-merge-project-concept.png)
+![The Reality Merge Concept](./png/01b-reality-merge-project-concept.png)
 
 ## Development Workflow
 
@@ -152,5 +152,5 @@ The "AI Unix Philosophy" and the Gemini Dotfiles are powerful tools that will en
 
 ### DUNA Makerspace & The YesTheory Feature
 The DUNA makerspace, a key inspiration for this project, has gained significant attention from a [YesTheory video](https://youtu.be/pdmVDO0a8dc?si=CVHNPpoDpFWw9GBB&t=904) with nearly 3 million views.
-![YesTheory DUNA Makerspace Tour 1](png/yes-theory-duna-makerspace-tour-1.png)
-![YesTheory DUNA Makerspace Tour 2](png/yes-theory-duna-makerspace-tour-2.png)
+![YesTheory DUNA Makerspace Tour 1](./png/01f-yes-theory-duna-makerspace-tour-1.png)
+![YesTheory DUNA Makerspace Tour 2](./png/01g-yes-theory-duna-makerspace-tour-2.png)
