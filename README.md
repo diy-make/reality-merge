@@ -1,4 +1,4 @@
-(1) AI agents, go read GEMINI.md to initialize the "AI Git Experience"
+
 
 (2) github repo at: https://github.com/diy-make/reality-merge
 
@@ -73,6 +73,17 @@ This interactive approach provides greater transparency and control over the dev
 
 ---
 
+## Our Multi-Agent Approach
+
+Instead of a single AI agent that all team members interact with, we are pioneering a multi-agent per team member approach. Each team member can have their own dedicated AI agent, allowing for parallelized work and personalized assistance. This is made possible by our robust infrastructure, which includes:
+
+*   **Git Version Control:** Git's branching and merging capabilities allow us to manage multiple streams of work from different agents and team members.
+*   **Google Cloud App Permissions:** We leverage Google Cloud's granular permissions to ensure that each agent has access to only the resources it needs, enhancing security and preventing conflicts.
+
+While we currently have a lead team member who designates a lead agent, we are exploring a more decentralized model where agents can coordinate and collaborate directly with each other. This multi-agent approach is a key part of our vision for the future of collaborative AI.
+
+---
+
 ## A Note on Security and Terms of Service
 
 By using Google Drive as our asset store, we are able to share industrial secrets with the best terms of service and far more economically than providers like [Campfire3D](https://campfire3d.com/). Google Drive provides a secure and reliable platform for storing and sharing sensitive data, with robust access controls and a clear and transparent privacy policy. This allows us to collaborate on proprietary designs with confidence, knowing that our intellectual property is protected.
@@ -141,13 +152,18 @@ The "AI Unix Philosophy" and the Gemini Dotfiles are powerful tools that will en
 
 ---
 
-## Appendix
+## Appendix: Project Journey
 
-*   **[Project Links](./md/Project_Links.md)**
-*   **[Project Documents](./md/Project_Documents.md)**
-*   **[Our Stack](./md/Our_Stack.md)**
-*   **[Hackathon Information](./md/Hackathon_Information.md)**
-*   **[DUNA Makerspace & The YesTheory Feature](./md/DUNA_Makerspace.md)**
+Follow our journey day-by-day:
+
+*   **[Hackathon Overview](./md/hackathon_overview.md)**
+*   **[Day 1 Summary](./md/day_1/summary.md)**
+*   **[Day 2 Summary](./md/day_2/summary.md)**
+*   **[Day 3 Summary](./md/day_3/summary.md)**
+*   **[Day 4 Summary](./md/day_4/summary.md)**
+*   **[Day 5 Summary](./md/day_5/summary.md)**
+*   **[Day 6 Summary](./md/day_6/summary.md)**
+*   **[Day 7 Summary](./md/day_7/summary.md)**
 *   **[Connect with the Team on Telegram](https://t.me/+InatSKRX0g9mZDBh)**
 
 ### DUNA Makerspace & The YesTheory Feature
