@@ -1,10 +1,10 @@
 
 
-(2) github repo at: https://github.com/diy-make/reality-merge
+(1) github repo at: https://github.com/diy-make/reality-merge
 
-(3) website at: https://diy-make.github.io/reality-merge
+(2) website at: https://diy-make.github.io/reality-merge
 
-(4) Our SensAI hack devpost: https://devpost.com/software/reality-merge
+(3) Our SensAI hack devpost: https://devpost.com/software/reality-merge
 # Reality Merge: A "SensAI" Hack for Collaborative Making
 
 Welcome to the Reality Merge project, born out of the SensAI Hackathon in San Francisco (December 5-7, 2025). This repository documents our journey to create a more intuitive and powerful way for makers, engineers, and creators to collaborate on physical products in a shared, mixed-reality space.
