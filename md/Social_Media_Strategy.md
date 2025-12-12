@@ -24,22 +24,22 @@ Here are some examples of our social media strategy in action during the hackath
 
 We started by sharing our progress on Day 1, highlighting the key problem we were solving.
 
-![Day 1 Recap Tweet](./jpg/02-day-1-recap-tweet.jpg)
+![Day 1 Recap Tweet](../jpg/02-day-1-recap-tweet.jpg)
 
 ### Day 2 Recap
 
 Our Day 2 recap focused on the "SensAI Hack" and the successful integration of our hybrid cloud system.
 
-![Day 2 Recap Social Post](./jpg/01-day-2-recap-social-post.jpg)
+![Day 2 Recap Social Post](../jpg/01-day-2-recap-social-post.jpg)
 
 ### Community Engagement
 
 Our community played a huge role in amplifying our message. Here's an example of 0ya sharing our Day 2 recap on the Make.DIY X account.
 
-![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](./png/69-0ya-shares-makediy-tweet.png)
+![0ya shares the Make.DIY tweet about the Reality Merge Hackathon](../png/69-0ya-shares-makediy-tweet.png)
 
 This led to more engagement and visibility for the project, as seen in the Make.DIY timeline.
 
-![Make.DIY Twitter Timeline](./jpg/03-makediy-twitter-timeline.jpg)
+![Make.DIY Twitter Timeline](../jpg/03-makediy-twitter-timeline.jpg)
 
 This collaborative approach to social media has been instrumental in sharing our story and building a community around the Reality Merge project.
