@@ -18,7 +18,7 @@ def check_all_links(all_links_file, base_repo_path, broken_links_file):
 
         for line_num, link_line in enumerate(links_section.splitlines(), 1):
             # Regex to find markdown links and direct URLs
-            match_md = re.search(r'\[.*?]\]\((.+?)\)', link_line)
+            match_md = re.search(r'\[.*?\]\((.+?)\)', link_line)
             match_url = re.search(r'http[s]?://[^\s\)]+', link_line)
             
             link = None
@@ -38,9 +38,24 @@ def check_all_links(all_links_file, base_repo_path, broken_links_file):
                 else:
                     # Local link
                     # Construct the absolute path
-                    link_path = os.path.normpath(os.path.join(os.path.dirname(md_file_full_path), link))
-                    if not os.path.exists(link_path):
-                        broken_links.append(f"Broken local link: {link} in {md_file_full_path}:{line_num}")
+                    # md_file_full_path is something like "repos/diy-make/reality-merge/md/day_1/summary.md"
+                    # link is something like "../../png/image.png"
+                    
+                    # Need to resolve the relative path correctly from the base_repo_path
+                    
+                    # Get the directory of the markdown file relative to the base_repo_path
+                    md_file_relative_dir = os.path.dirname(os.path.relpath(md_file_full_path, base_repo_path))
+                    
+                    # Join the markdown file's relative directory with the link
+                    resolved_link_path = os.path.normpath(os.path.join(md_file_relative_dir, link))
+                    
+                    # Construct the full absolute path
+                    full_local_path = os.path.join(base_repo_path, resolved_link_path)
+                    
+                    print(f"Checking local link: {link} from {md_file_full_path} -> resolved to {full_local_path}")
+                    
+                    if not os.path.exists(full_local_path):
+                        broken_links.append(f"Broken local link: {link} in {md_file_full_path}:{line_num} (resolved to {full_local_path})")
 
     if broken_links:
         with open(broken_links_file, 'w') as f:
@@ -51,4 +66,4 @@ def check_all_links(all_links_file, base_repo_path, broken_links_file):
         print("All links are valid.")
 
 if __name__ == "__main__":
-    check_all_links("repos/diy-make/reality-merge/md/all_links.txt", "repos/diy-make/reality-merge", "broken_links.txt")
+    check_all_links("repos/diy-make/reality-merge/txt/all_links.txt", "repos/diy-make/reality-merge", "broken_links.txt")

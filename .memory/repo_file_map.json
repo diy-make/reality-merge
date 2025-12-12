@@ -1,0 +1,355 @@
+{
+  "repository_name": "reality-merge",
+  "files": [
+    {
+      "path": ".gitignore",
+      "utility_value": "Specifies which files and directories should be ignored by Git.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for maintaining a clean repository."
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "utility_value": "Configures pre-commit hooks to automatically run scripts before a commit.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for maintaining code quality and security."
+    },
+    {
+      "path": ".secrets.baseline",
+      "utility_value": "A baseline for the `detect-secrets` pre-commit hook.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for the `detect-secrets` hook to work correctly."
+    },
+    {
+      "path": "README.ai",
+      "utility_value": "Contains AI-specific instructions.",
+      "generalized_event_structure": "secondary",
+      "actual_event_structure": "secondary",
+      "recommendation": "Keep. Provides context for AI agents."
+    },
+    {
+      "path": "README.md",
+      "utility_value": "Main entry point for human users.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for project documentation."
+    },
+    {
+      "path": ".memory/git_configuration.json",
+      "utility_value": "Defines the standard operating procedures for Git usage.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for consistent Git workflow."
+    },
+    {
+      "path": ".memory/google_drive_orchestrator_role.json",
+      "utility_value": "Defines the role and responsibilities of the Google Drive Orchestrator agent.",
+      "generalized_event_structure": "secondary",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Provides context for a specific agent role."
+    },
+    {
+      "path": ".memory/inter_agent_communication.json",
+      "utility_value": "Defines the protocol for inter-agent communication.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for multi-agent collaboration."
+    },
+    {
+      "path": ".memory/new_user_onboarding.json",
+      "utility_value": "Outlines the process for onboarding new users.",
+      "generalized_event_structure": "secondary",
+      "actual_event_structure": "secondary",
+      "recommendation": "Keep. Useful for new team members."
+    },
+    {
+      "path": ".memory/project_organization.json",
+      "utility_value": "Describes the project's directory structure.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Essential for understanding the project layout."
+    },
+    {
+      "path": ".memory/python_script_execution.json",
+      "utility_value": "Defines the rules and best practices for executing Python scripts.",
+      "generalized_event_structure": "secondary",
+      "actual_event_structure": "secondary",
+      "recommendation": "Keep. Useful for maintaining code quality."
+    },
+    {
+      "path": ".memory/universal/design_principles.json",
+      "utility_value": "A copy of the root `design_principles.json` file.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Ensures all agents share the same core principles."
+    },
+    {
+      "path": ".memory/universal/rules.json",
+      "utility_value": "A 'lite' version of the root `rules.json` file.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Contains general-purpose rules applicable to all sub-repositories."
+    },
+    {
+      "path": ".memory/universal/schema.json",
+      "utility_value": "A copy of the root `schema.json` file.",
+      "generalized_event_structure": "critical",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Ensures that the memory system remains consistent across all repositories."
+    },
+    {
+      "path": ".memory/universal/sync_mcp.json",
+      "utility_value": "A Machine Coded Principle for the `sync` command.",
+      "generalized_event_structure": "secondary",
+      "actual_event_structure": "critical",
+      "recommendation": "Keep. Defines the behavior and options of the `sync` command."
+    },
+    {
+        "path": "jpg/01-day-2-recap-social-post.jpg",
+        "utility_value": "Image for social media.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Used in Social_Media_Strategy.md."
+    },
+    {
+        "path": "jpg/02-day-1-recap-tweet.jpg",
+        "utility_value": "Image for social media.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Used in Social_Media_Strategy.md."
+    },
+    {
+        "path": "jpg/03-makediy-twitter-timeline.jpg",
+        "utility_value": "Image for social media.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Used in Social_Media_Strategy.md."
+    },
+    {
+        "path": "jpg/04-reality-merge-hackathon-table.jpg",
+        "utility_value": "Image of the hackathon workspace.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/05-team-photo-with-cheerbot.jpg",
+        "utility_value": "Image of the hackathon team.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/06-cheerbot-in-vr.jpg",
+        "utility_value": "Image of the Cheerbot in a VR environment.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/124-portal-project-telegram-chat.jpg",
+        "utility_value": "Image of a Telegram chat.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/125-cheerbot-3d-print.jpg",
+        "utility_value": "Image of a 3D printed Cheerbot.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/126-portal-tech-whiteboard.jpg",
+        "utility_value": "Image of a whiteboard with project ideas.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/20251205_124252.jpg",
+        "utility_value": "Image of the hackathon workspace.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/32-how-to-submit-your-project-google-drive.jpg",
+        "utility_value": "Image of a presentation about submitting projects to Google Drive.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/33-cheerbot-on-phone.jpg",
+        "utility_value": "Image of a person showing a picture of the Cheerbot on a phone.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/34-3d-printing-parts.jpg",
+        "utility_value": "Image of a 3D printer printing parts.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/35-3d-printer-and-terminal.jpg",
+        "utility_value": "Image of a 3D printer and a laptop with a terminal.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/36-cheerbot-in-vr-2.jpg",
+        "utility_value": "Image of the Cheerbot in a VR environment.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/37-hackathon-workspace.jpg",
+        "utility_value": "Image of the hackathon workspace.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/38-hackathon-workspace-with-vr.jpg",
+        "utility_value": "Image of the hackathon workspace with a person wearing a VR headset.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/39-ai-glass-prototyper-kit-presentation.jpg",
+        "utility_value": "Image of a presentation about an AI Glass Prototyper Kit.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/40-hackathon-presentation-room.jpg",
+        "utility_value": "Image of the hackathon presentation room.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/41-portal-tech-whiteboard.jpg",
+        "utility_value": "Image of a whiteboard with 'Portal Tech' written on it.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the project."
+    },
+    {
+        "path": "jpg/42-hackathon-team-working.jpg",
+        "utility_value": "Image of the hackathon team working.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/43-hackathon-team-working-2.jpg",
+        "utility_value": "Image of the hackathon team working.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/44-hackathon-meme.jpg",
+        "utility_value": "Image of a meme related to the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/45-frontier-makerspace-sign.jpg",
+        "utility_value": "Image of the Frontier Makerspace sign.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/46-custom-arcade-cabinet.jpg",
+        "utility_value": "Image of a custom-built arcade cabinet.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_10@06-12-2025_11-21-09.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_11@06-12-2025_11-21-09.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_12@06-12-2025_11-40-05.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_13@06-12-2025_20-46-17.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_14@06-12-2025_21-13-19.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "jpg/photo_1@05-12-2025_15-02-17.jpg",
+        "utility_value": "Image taken during the hackathon.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides context for the hackathon."
+    },
+    {
+        "path": "md/day_7/20251211-101548_Morpheus.md",
+        "utility_value": "Session analysis of the agent Morpheus.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "critical",
+        "recommendation": "Keep. Provides a detailed log of the agent's activity."
+    },
+    {
+        "path": "md/day_7/20251211-123321_Helia.md",
+        "utility_value": "Session analysis of the agent Helia.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "critical",
+        "recommendation": "Keep. Provides a detailed log of the agent's activity."
+    },
+    {
+        "path": "md/day_7/Screenshots.md",
+        "utility_value": "A collection of screenshots for Day 7.",
+        "generalized_event_structure": "secondary",
+        "actual_event_structure": "secondary",
+        "recommendation": "Keep. Provides visual context for the day's events."
+    },
+    {
+        "path": "md/day_7/summary.md",
+        "utility_value": "A summary of the work done on Day 7.",
+        "generalized_event_structure": "critical",
+        "actual_event_structure": "critical",
+        "recommendation": "Keep. Essential for understanding the project's progress."
+    }
+  ]
+}
