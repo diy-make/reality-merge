@@ -171,7 +171,7 @@
 ---
 
 **70. Day 2 Recap Social Post**
-![Day 2 Recap Social Post](../../png/70-day-2-recap-social-post.jpg)
+![Day 2 Recap Social Post](../../jpg/70-day-2-recap-social-post.jpg)
 *A social media post summarizing the key achievements of Day 2 of the Reality Merge hackathon, including the successful implementation of the Google Drive sync and the proving of the "SensAI workflow".*
 
 *   **Key Takeaway:** The team is actively sharing its progress on social media, generating excitement and demonstrating the project's real-world viability.
@@ -179,7 +179,7 @@
 ---
 
 **71. Day 1 Recap Tweet**
-![Day 1 Recap Tweet](../../png/71-day-1-recap-tweet.jpg)
+![Day 1 Recap Tweet](../../jpg/71-day-1-recap-tweet.jpg)
 *The original tweet from the Make.DIY X account summarizing the achievements of Day 1 of the Reality Merge hackathon. The tweet highlights the team's success in solving a major pain point in VR/MR collaboration.*
 
 *   **Key Takeaway:** The project's success is being broadcast on social media, showcasing the team's innovative solution to a wider audience.
@@ -187,7 +187,7 @@
 ---
 
 **72. Reality Merge Hackathon Table**
-![Reality Merge Hackathon Table](../../png/72-reality-merge-hackathon-table.jpg)
+![Reality Merge Hackathon Table](../../jpg/72-reality-merge-hackathon-table.jpg)
 *A photo of the Reality Merge team's table at the SensAI hackathon, featuring the team's sign, the 3D-printed Cheerbot, and photos of the team members.*
 
 *   **Key Takeaway:** The team has a physical presence at the hackathon, with a dedicated workspace and a tangible representation of their project in the form of the 3D-printed Cheerbot.
@@ -195,7 +195,7 @@
 ---
 
 **73. Make.DIY Twitter Timeline**
-![Make.DIY Twitter Timeline](../../png/73-makediy-twitter-timeline.jpg)
+![Make.DIY Twitter Timeline](../../jpg/73-makediy-twitter-timeline.jpg)
 *A screenshot of the Make.DIY X account's timeline, showing a repost of 0ya's "let's merge realities!" tweet and the "Reality Merge Hackathon - Day 2 Recap" tweet.*
 
 *   **Key Takeaway:** The Make.DIY X account is actively promoting the Reality Merge project and engaging with the community.
@@ -203,7 +203,7 @@
 ---
 
 **74. Team Photo with Cheerbot**
-![Team Photo with Cheerbot](../../png/74-team-photo-with-cheerbot.jpg)
+![Team Photo with Cheerbot](../../jpg/74-team-photo-with-cheerbot.jpg)
 *A photo of three members of the Reality Merge team at the SensAI Hackathon, with one of them holding the 3D-printed Cheerbot.*
 
 *   **Key Takeaway:** The team is proud of their work and is enjoying their time at the hackathon.

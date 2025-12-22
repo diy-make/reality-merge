@@ -899,37 +899,70 @@
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:20](day_2/collaboration.md)
 ```
 
-21. [photo_10@06-12-2025_11-21-09.jpg](../jpg/photo_10@06-12-2025_11-21-09.jpg)
+21. [70-day-2-recap-social-post.jpg](../jpg/70-day-2-recap-social-post.jpg)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:33](Social_Media_Strategy.md)
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:174](day_3/Screenshots.md)
+```
+
+22. [71-day-1-recap-tweet.jpg](../jpg/71-day-1-recap-tweet.jpg)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:27](Social_Media_Strategy.md)
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:182](day_3/Screenshots.md)
+```
+
+23. [72-reality-merge-hackathon-table.jpg](../jpg/72-reality-merge-hackathon-table.jpg)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:190](day_3/Screenshots.md)
+```
+
+24. [73-makediy-twitter-timeline.jpg](../jpg/73-makediy-twitter-timeline.jpg)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:43](Social_Media_Strategy.md)
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:198](day_3/Screenshots.md)
+```
+
+25. [74-team-photo-with-cheerbot.jpg](../jpg/74-team-photo-with-cheerbot.jpg)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:206](day_3/Screenshots.md)
+```
+
+26. [photo_10@06-12-2025_11-21-09.jpg](../jpg/photo_10@06-12-2025_11-21-09.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:23](day_2/collaboration.md)
 ```
 
-22. [photo_11@06-12-2025_11-21-09.jpg](../jpg/photo_11@06-12-2025_11-21-09.jpg)
+27. [photo_11@06-12-2025_11-21-09.jpg](../jpg/photo_11@06-12-2025_11-21-09.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:26](day_2/collaboration.md)
 ```
 
-23. [photo_12@06-12-2025_11-40-05.jpg](../jpg/photo_12@06-12-2025_11-40-05.jpg)
+28. [photo_12@06-12-2025_11-40-05.jpg](../jpg/photo_12@06-12-2025_11-40-05.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:29](day_2/collaboration.md)
 ```
 
-24. [photo_13@06-12-2025_20-46-17.jpg](../jpg/photo_13@06-12-2025_20-46-17.jpg)
+29. [photo_13@06-12-2025_20-46-17.jpg](../jpg/photo_13@06-12-2025_20-46-17.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:32](day_2/collaboration.md)
 ```
 
-25. [photo_14@06-12-2025_21-13-19.jpg](../jpg/photo_14@06-12-2025_21-13-19.jpg)
+30. [photo_14@06-12-2025_21-13-19.jpg](../jpg/photo_14@06-12-2025_21-13-19.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:35](day_2/collaboration.md)
 ```
 
-26. [photo_1@05-12-2025_15-02-17.jpg](../jpg/photo_1@05-12-2025_15-02-17.jpg)
+31. [photo_1@05-12-2025_15-02-17.jpg](../jpg/photo_1@05-12-2025_15-02-17.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:13](day_1/collaboration.md)
