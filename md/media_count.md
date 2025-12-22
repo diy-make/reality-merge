@@ -126,7 +126,7 @@
 21. [09-gemini-cli-session-summary.png](../png/09-gemini-cli-session-summary.png)
 **Referenced in:**
 ```
-[repos/diy-make/reality-merge/md/hackathon_overview.md:72](hackathon_overview.md)
+[repos/diy-make/reality-merge/md/hackathon_overview.md:94](hackathon_overview.md)
 [repos/diy-make/reality-merge/md/day_2/Screenshots.md:70](day_2/Screenshots.md)
 ```
 
@@ -331,14 +331,14 @@
 53. [19-gemini-cli-end-of-session-summary.png](../png/19-gemini-cli-end-of-session-summary.png)
 **Referenced in:**
 ```
-[repos/diy-make/reality-merge/md/hackathon_overview.md:77](hackathon_overview.md)
+[repos/diy-make/reality-merge/md/hackathon_overview.md:99](hackathon_overview.md)
 [repos/diy-make/reality-merge/md/day_2/Screenshots.md:149](day_2/Screenshots.md)
 ```
 
 54. [20-gemini-cli-end-of-session-summary-2.png](../png/20-gemini-cli-end-of-session-summary-2.png)
 **Referenced in:**
 ```
-[repos/diy-make/reality-merge/md/hackathon_overview.md:73](hackathon_overview.md)
+[repos/diy-make/reality-merge/md/hackathon_overview.md:95](hackathon_overview.md)
 [repos/diy-make/reality-merge/md/day_2/Screenshots.md:157](day_2/Screenshots.md)
 ```
 
@@ -561,7 +561,7 @@
 91. [57-agent-end-of-session-summary.png](../png/57-agent-end-of-session-summary.png)
 **Referenced in:**
 ```
-[repos/diy-make/reality-merge/md/hackathon_overview.md:81](hackathon_overview.md)
+[repos/diy-make/reality-merge/md/hackathon_overview.md:103](hackathon_overview.md)
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:70](day_3/Screenshots.md)
 ```
 
@@ -631,314 +631,305 @@
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:158](day_3/Screenshots.md)
 ```
 
-103. [75-cheerbot-youtube-channel.png](../png/75-cheerbot-youtube-channel.png)
+103. [69-0ya-shares-makediy-tweet.png](../png/69-0ya-shares-makediy-tweet.png)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/day_3/Screenshots.md:166](day_3/Screenshots.md)
+```
+
+104. [75-cheerbot-youtube-channel.png](../png/75-cheerbot-youtube-channel.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:214](day_3/Screenshots.md)
 ```
 
-104. [76-chatgpt-summarizes-reality-merge.png](../png/76-chatgpt-summarizes-reality-merge.png)
+105. [76-chatgpt-summarizes-reality-merge.png](../png/76-chatgpt-summarizes-reality-merge.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:222](day_3/Screenshots.md)
 ```
 
-105. [77-incorrect-readme-header-formatting.png](../png/77-incorrect-readme-header-formatting.png)
+106. [77-incorrect-readme-header-formatting.png](../png/77-incorrect-readme-header-formatting.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:230](day_3/Screenshots.md)
 ```
 
-106. [78-apollo-gets-new-instructions-and-api-error.png](../png/78-apollo-gets-new-instructions-and-api-error.png)
+107. [78-apollo-gets-new-instructions-and-api-error.png](../png/78-apollo-gets-new-instructions-and-api-error.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:238](day_3/Screenshots.md)
 ```
 
-107. [79-reality-merge-readme-on-github.png](../png/79-reality-merge-readme-on-github.png)
+108. [79-reality-merge-readme-on-github.png](../png/79-reality-merge-readme-on-github.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:245](day_3/Screenshots.md)
 ```
 
-108. [80-apollo-acknowledges-correction-and-simplifies-plan.png](../png/80-apollo-acknowledges-correction-and-simplifies-plan.png)
+109. [80-apollo-acknowledges-correction-and-simplifies-plan.png](../png/80-apollo-acknowledges-correction-and-simplifies-plan.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:252](day_3/Screenshots.md)
 ```
 
-109. [81-agent-handles-incorrect-branch-name.png](../png/81-agent-handles-incorrect-branch-name.png)
+110. [81-agent-handles-incorrect-branch-name.png](../png/81-agent-handles-incorrect-branch-name.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:259](day_3/Screenshots.md)
 ```
 
-110. [82-agent-session-summary-and-performance-metrics.png](../png/82-agent-session-summary-and-performance-metrics.png)
+111. [82-agent-session-summary-and-performance-metrics.png](../png/82-agent-session-summary-and-performance-metrics.png)
 **Referenced in:**
 ```
-[repos/diy-make/reality-merge/md/hackathon_overview.md:85](hackathon_overview.md)
+[repos/diy-make/reality-merge/md/hackathon_overview.md:107](hackathon_overview.md)
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:266](day_3/Screenshots.md)
 ```
 
-111. [83-hyperion-announces-itself-to-the-swarm.png](../png/83-hyperion-announces-itself-to-the-swarm.png)
+112. [83-hyperion-announces-itself-to-the-swarm.png](../png/83-hyperion-announces-itself-to-the-swarm.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:273](day_3/Screenshots.md)
 ```
 
-112. [83a-screenshot-2025-12-07-17-13-03.png](../png/83a-screenshot-2025-12-07-17-13-03.png)
+113. [83a-screenshot-2025-12-07-17-13-03.png](../png/83a-screenshot-2025-12-07-17-13-03.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_3/Screenshots.md:280](day_3/Screenshots.md)
 ```
 
-113. [84-user-instructs-agent-to-create-reports.png](../png/84-user-instructs-agent-to-create-reports.png)
+114. [84-user-instructs-agent-to-create-reports.png](../png/84-user-instructs-agent-to-create-reports.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:6](day_4/Screenshots.md)
 ```
 
-114. [85-agent-identifies-report-templates.png](../png/85-agent-identifies-report-templates.png)
+115. [85-agent-identifies-report-templates.png](../png/85-agent-identifies-report-templates.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:14](day_4/Screenshots.md)
 ```
 
-115. [86-agent-reads-apollos-report.png](../png/86-agent-reads-apollos-report.png)
+116. [86-agent-reads-apollos-report.png](../png/86-agent-reads-apollos-report.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:22](day_4/Screenshots.md)
 ```
 
-116. [87-agent-acknowledges-reality-merge-as-a-git-repo.png](../png/87-agent-acknowledges-reality-merge-as-a-git-repo.png)
+117. [87-agent-acknowledges-reality-merge-as-a-git-repo.png](../png/87-agent-acknowledges-reality-merge-as-a-git-repo.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:30](day_4/Screenshots.md)
 ```
 
-117. [88-agents-plan-for-manual-intervention.png](../png/88-agents-plan-for-manual-intervention.png)
+118. [88-agents-plan-for-manual-intervention.png](../png/88-agents-plan-for-manual-intervention.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:38](day_4/Screenshots.md)
 ```
 
-118. [89-agents-monologue-on-detect-secrets.png](../png/89-agents-monologue-on-detect-secrets.png)
+119. [89-agents-monologue-on-detect-secrets.png](../png/89-agents-monologue-on-detect-secrets.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:46](day_4/Screenshots.md)
 ```
 
-119. [90-agents-self-correction-on-echo.png](../png/90-agents-self-correction-on-echo.png)
+120. [90-agents-self-correction-on-echo.png](../png/90-agents-self-correction-on-echo.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:54](day_4/Screenshots.md)
 ```
 
-120. [91-agents-analysis-of-memory-files.png](../png/91-agents-analysis-of-memory-files.png)
+121. [91-agents-analysis-of-memory-files.png](../png/91-agents-analysis-of-memory-files.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:62](day_4/Screenshots.md)
 ```
 
-121. [92-agents-analysis-of-md-files.png](../png/92-agents-analysis-of-md-files.png)
+122. [92-agents-analysis-of-md-files.png](../png/92-agents-analysis-of-md-files.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:70](day_4/Screenshots.md)
 ```
 
-122. [93-agents-analysis-of-scripts-files.png](../png/93-agents-analysis-of-scripts-files.png)
+123. [93-agents-analysis-of-scripts-files.png](../png/93-agents-analysis-of-scripts-files.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:78](day_4/Screenshots.md)
 ```
 
-123. [94-agents-plan-to-create-file-manifest.png](../png/94-agents-plan-to-create-file-manifest.png)
+124. [94-agents-plan-to-create-file-manifest.png](../png/94-agents-plan-to-create-file-manifest.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:86](day_4/Screenshots.md)
 ```
 
-124. [95-agent-creates-file-manifest.png](../png/95-agent-creates-file-manifest.png)
+125. [95-agent-creates-file-manifest.png](../png/95-agent-creates-file-manifest.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:94](day_4/Screenshots.md)
 ```
 
-125. [96-agents-recommendations-for-non-keep-actions.png](../png/96-agents-recommendations-for-non-keep-actions.png)
+126. [96-agents-recommendations-for-non-keep-actions.png](../png/96-agents-recommendations-for-non-keep-actions.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:102](day_4/Screenshots.md)
 ```
 
-126. [97-agent-moves-todo-md.png](../png/97-agent-moves-todo-md.png)
+127. [97-agent-moves-todo-md.png](../png/97-agent-moves-todo-md.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:110](day_4/Screenshots.md)
 ```
 
-127. [98-agent-merges-safe-public-commits-report.png](../png/98-agent-merges-safe-public-commits-report.png)
+128. [98-agent-merges-safe-public-commits-report.png](../png/98-agent-merges-safe-public-commits-report.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:118](day_4/Screenshots.md)
 ```
 
-128. [99-agents-thorough-review.png](../png/99-agents-thorough-review.png)
+129. [99-agents-thorough-review.png](../png/99-agents-thorough-review.png)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_4/Screenshots.md:126](day_4/Screenshots.md)
 ```
 
-129. [Screenshot from 2025-12-07 14-18-28.png](../png/Screenshot from 2025-12-07 14-18-28.png)
+130. [Aetheria-current-session-summary.png](../png/Aetheria-current-session-summary.png)
+**Referenced in:**
+```
+[repos/diy-make/reality-merge/md/day_7/Screenshots.md:6](day_7/Screenshots.md)
+```
+
 
 ## JPG Index
 
-1. [01-day-2-recap-social-post.jpg](../jpg/01-day-2-recap-social-post.jpg)
-**Referenced in:**
-```
-[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:33](Social_Media_Strategy.md)
-```
-
-2. [02-day-1-recap-tweet.jpg](../jpg/02-day-1-recap-tweet.jpg)
-**Referenced in:**
-```
-[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:27](Social_Media_Strategy.md)
-```
-
-3. [03-makediy-twitter-timeline.jpg](../jpg/03-makediy-twitter-timeline.jpg)
-**Referenced in:**
-```
-[repos/diy-make/reality-merge/md/Social_Media_Strategy.md:43](Social_Media_Strategy.md)
-```
-
-4. [04-reality-merge-hackathon-table.jpg](../jpg/04-reality-merge-hackathon-table.jpg)
-5. [05-team-photo-with-cheerbot.jpg](../jpg/05-team-photo-with-cheerbot.jpg)
-6. [06-cheerbot-in-vr.jpg](../jpg/06-cheerbot-in-vr.jpg)
-7. [124-portal-project-telegram-chat.jpg](../jpg/124-portal-project-telegram-chat.jpg)
+1. [06-cheerbot-in-vr.jpg](../jpg/06-cheerbot-in-vr.jpg)
+2. [124-portal-project-telegram-chat.jpg](../jpg/124-portal-project-telegram-chat.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/Screenshots.md:89](day_1/Screenshots.md)
 [repos/diy-make/reality-merge/md/day_1/Screenshots.md:92](day_1/Screenshots.md)
 ```
 
-8. [125-cheerbot-3d-print.jpg](../jpg/125-cheerbot-3d-print.jpg)
-9. [126-portal-tech-whiteboard.jpg](../jpg/126-portal-tech-whiteboard.jpg)
+3. [125-cheerbot-3d-print.jpg](../jpg/125-cheerbot-3d-print.jpg)
+4. [126-portal-tech-whiteboard.jpg](../jpg/126-portal-tech-whiteboard.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:8](day_1/collaboration.md)
 ```
 
-10. [20251205_124252.jpg](../jpg/20251205_124252.jpg)
+5. [20251205_124252.jpg](../jpg/20251205_124252.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:10](day_1/collaboration.md)
 ```
 
-11. [32-how-to-submit-your-project-google-drive.jpg](../jpg/32-how-to-submit-your-project-google-drive.jpg)
+6. [32-how-to-submit-your-project-google-drive.jpg](../jpg/32-how-to-submit-your-project-google-drive.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:38](day_2/collaboration.md)
 ```
 
-12. [33-cheerbot-on-phone.jpg](../jpg/33-cheerbot-on-phone.jpg)
+7. [33-cheerbot-on-phone.jpg](../jpg/33-cheerbot-on-phone.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:41](day_2/collaboration.md)
 ```
 
-13. [34-3d-printing-parts.jpg](../jpg/34-3d-printing-parts.jpg)
+8. [34-3d-printing-parts.jpg](../jpg/34-3d-printing-parts.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:44](day_2/collaboration.md)
 ```
 
-14. [35-3d-printer-and-terminal.jpg](../jpg/35-3d-printer-and-terminal.jpg)
+9. [35-3d-printer-and-terminal.jpg](../jpg/35-3d-printer-and-terminal.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:47](day_2/collaboration.md)
 ```
 
-15. [36-cheerbot-in-vr-2.jpg](../jpg/36-cheerbot-in-vr-2.jpg)
-16. [37-hackathon-workspace.jpg](../jpg/37-hackathon-workspace.jpg)
-17. [38-hackathon-workspace-with-vr.jpg](../jpg/38-hackathon-workspace-with-vr.jpg)
-18. [39-ai-glass-prototyper-kit-presentation.jpg](../jpg/39-ai-glass-prototyper-kit-presentation.jpg)
+10. [36-cheerbot-in-vr-2.jpg](../jpg/36-cheerbot-in-vr-2.jpg)
+11. [37-hackathon-workspace.jpg](../jpg/37-hackathon-workspace.jpg)
+12. [38-hackathon-workspace-with-vr.jpg](../jpg/38-hackathon-workspace-with-vr.jpg)
+13. [39-ai-glass-prototyper-kit-presentation.jpg](../jpg/39-ai-glass-prototyper-kit-presentation.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:16](day_1/collaboration.md)
 ```
 
-19. [40-hackathon-presentation-room.jpg](../jpg/40-hackathon-presentation-room.jpg)
+14. [40-hackathon-presentation-room.jpg](../jpg/40-hackathon-presentation-room.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:19](day_1/collaboration.md)
 ```
 
-20. [41-portal-tech-whiteboard.jpg](../jpg/41-portal-tech-whiteboard.jpg)
+15. [41-portal-tech-whiteboard.jpg](../jpg/41-portal-tech-whiteboard.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:22](day_1/collaboration.md)
 ```
 
-21. [42-hackathon-team-working.jpg](../jpg/42-hackathon-team-working.jpg)
+16. [42-hackathon-team-working.jpg](../jpg/42-hackathon-team-working.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:25](day_1/collaboration.md)
 ```
 
-22. [43-hackathon-team-working-2.jpg](../jpg/43-hackathon-team-working-2.jpg)
+17. [43-hackathon-team-working-2.jpg](../jpg/43-hackathon-team-working-2.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:28](day_1/collaboration.md)
 ```
 
-23. [44-hackathon-meme.jpg](../jpg/44-hackathon-meme.jpg)
+18. [44-hackathon-meme.jpg](../jpg/44-hackathon-meme.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:31](day_1/collaboration.md)
 ```
 
-24. [45-frontier-makerspace-sign.jpg](../jpg/45-frontier-makerspace-sign.jpg)
+19. [45-frontier-makerspace-sign.jpg](../jpg/45-frontier-makerspace-sign.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:17](day_2/collaboration.md)
 ```
 
-25. [46-custom-arcade-cabinet.jpg](../jpg/46-custom-arcade-cabinet.jpg)
+20. [46-custom-arcade-cabinet.jpg](../jpg/46-custom-arcade-cabinet.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:20](day_2/collaboration.md)
 ```
 
-26. [photo_10@06-12-2025_11-21-09.jpg](../jpg/photo_10@06-12-2025_11-21-09.jpg)
+21. [photo_10@06-12-2025_11-21-09.jpg](../jpg/photo_10@06-12-2025_11-21-09.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:23](day_2/collaboration.md)
 ```
 
-27. [photo_11@06-12-2025_11-21-09.jpg](../jpg/photo_11@06-12-2025_11-21-09.jpg)
+22. [photo_11@06-12-2025_11-21-09.jpg](../jpg/photo_11@06-12-2025_11-21-09.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:26](day_2/collaboration.md)
 ```
 
-28. [photo_12@06-12-2025_11-40-05.jpg](../jpg/photo_12@06-12-2025_11-40-05.jpg)
+23. [photo_12@06-12-2025_11-40-05.jpg](../jpg/photo_12@06-12-2025_11-40-05.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:29](day_2/collaboration.md)
 ```
 
-29. [photo_13@06-12-2025_20-46-17.jpg](../jpg/photo_13@06-12-2025_20-46-17.jpg)
+24. [photo_13@06-12-2025_20-46-17.jpg](../jpg/photo_13@06-12-2025_20-46-17.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:32](day_2/collaboration.md)
 ```
 
-30. [photo_14@06-12-2025_21-13-19.jpg](../jpg/photo_14@06-12-2025_21-13-19.jpg)
+25. [photo_14@06-12-2025_21-13-19.jpg](../jpg/photo_14@06-12-2025_21-13-19.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_2/collaboration.md:35](day_2/collaboration.md)
 ```
 
-31. [photo_1@05-12-2025_15-02-17.jpg](../jpg/photo_1@05-12-2025_15-02-17.jpg)
+26. [photo_1@05-12-2025_15-02-17.jpg](../jpg/photo_1@05-12-2025_15-02-17.jpg)
 **Referenced in:**
 ```
 [repos/diy-make/reality-merge/md/day_1/collaboration.md:13](day_1/collaboration.md)
